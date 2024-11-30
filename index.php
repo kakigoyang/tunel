@@ -2962,8 +2962,8 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
 
     </div>
     <div class="n-columns-2">
-        <a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
-        <a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
+        <a href="https://b.1halubet76.xyz/?action=register&rc=VE43N61O59&ci=11<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
+        <a href="https://b.1halubet76.xyz/?action=register&rc=VE43N61O59&ci=11<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
         </div> 
     <div class="cc-pdp-carousels-container">
 
