@@ -80,10 +80,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     
-        <title><?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia </title>
+        <title><?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter </title>
     
     
-        <meta name="description" content="<?php echo $brand ?> adalah menyediakan layanan perawatan kendaraan yang profesional dan terpercaya, memastikan mobil Anda tetap dalam kondisi terbaik. Dari servis rutin hingga perbaikan spesifik, tim ahli kami siap memberikan solusi tepat untuk menjaga performa kendaraan Anda. Dengan menggunakan peralatan modern dan suku cadang berkualitas, Arum Saria Auto Care berkomitmen untuk memberikan layanan cepat, aman, dan memuaskan. Percayakan perawatan kendaraan Anda pada kami, dan nikmati perjalanan yang lebih nyaman dan aman setiap hari."/>
+        <meta name="description" content="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur."/>
     
     
     
@@ -98,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <link rel="amphtml" href="https://kolateng.site/slot-hl/arum/?sosial=<?php echo $brand ?>">
+    <link rel="amphtml" href="kolateng.site/slot-hl/talaga/?sosial=<?php echo $brand ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
@@ -126,7 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<link rel="canonical" href="https://arumsariautocare.com/dana/?sosial=<?php echo $brand ?>"/>
+<link rel="canonical" href="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>"/>
 
 
 <script type="text/javascript">//<!--
@@ -292,7 +292,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
    <script type="application/ld+json">
-        {"@context":"http://schema.org/","@type":"Product","name":"<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia ","mpn":"540M_2022_5727404","sku":"540M_2022_5727404","brand":{"@type":"Brand","name":"iaiqh"},"image":["https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=800&sh=800","https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwf981bf3d/images/large/5727404_3.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwb07af086/images/large/5727404_4.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwbfe716d7/images/large/5727404_5.jpg?sw=800&sh=800"],"offers":{"url":{},"@type":"Offer","priceCurrency":"IDR","price":"59900.00","availability":"http://schema.org/InStock"},"description":"<?php echo $brand ?> adalah menyediakan layanan perawatan kendaraan yang profesional dan terpercaya, memastikan mobil Anda tetap dalam kondisi terbaik. Dari servis rutin hingga perbaikan spesifik, tim ahli kami siap memberikan solusi tepat untuk menjaga performa kendaraan Anda. Dengan menggunakan peralatan modern dan suku cadang berkualitas, Arum Saria Auto Care berkomitmen untuk memberikan layanan cepat, aman, dan memuaskan. Percayakan perawatan kendaraan Anda pada kami, dan nikmati perjalanan yang lebih nyaman dan aman setiap hari.."}
+        {"@context":"http://schema.org/","@type":"Product","name":"<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter ","mpn":"540M_2022_5727404","sku":"540M_2022_5727404","brand":{"@type":"Brand","name":"iaiqh"},"image":["https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=800&sh=800","https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwf981bf3d/images/large/5727404_3.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwb07af086/images/large/5727404_4.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwbfe716d7/images/large/5727404_5.jpg?sw=800&sh=800"],"offers":{"url":{},"@type":"Offer","priceCurrency":"IDR","price":"59900.00","availability":"http://schema.org/InStock"},"description":"<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.."}
     </script>
 
 
@@ -302,11 +302,11 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 <meta property="og:locale" content="en_ID" />
 
-<meta property="og:title" content="<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia " />
+<meta property="og:title" content="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " />
 
-<meta property="og:description" content="<?php echo $brand ?> adalah menyediakan layanan perawatan kendaraan yang profesional dan terpercaya, memastikan mobil Anda tetap dalam kondisi terbaik. Dari servis rutin hingga perbaikan spesifik, tim ahli kami siap memberikan solusi tepat untuk menjaga performa kendaraan Anda. Dengan menggunakan peralatan modern dan suku cadang berkualitas, Arum Saria Auto Care berkomitmen untuk memberikan layanan cepat, aman, dan memuaskan. Percayakan perawatan kendaraan Anda pada kami, dan nikmati perjalanan yang lebih nyaman dan aman setiap hari." />
+<meta property="og:description" content="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur." />
 
-<meta property="og:url" content="https://arumsariautocare.com/dana/?sosial=<?php echo $brand ?>" />
+<meta property="og:url" content="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>" />
 
 <meta property="og:image" content="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" />
 
@@ -2962,8 +2962,8 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
 
     </div>
     <div class="n-columns-2">
-        <a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
-        <a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
+        <a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
+        <a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
         </div> 
     <div class="cc-pdp-carousels-container">
 
@@ -2990,7 +2990,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
                 <source data-srcset="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg 1x,https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=1634 2x" media="(min-width: 1200px)" width="817" height="817" />
                 <!--[if IE 9]></video><![endif]-->
 
-                <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg" alt="<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia " title="<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia " class="b-lazyload"  width="817" height="817" loading="lazy" />
+                <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg" alt="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " title="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " class="b-lazyload"  width="817" height="817" loading="lazy" />
         </picture>
 </div>
                     </div>
@@ -3013,7 +3013,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
         <ul class="pdp-carousel-thumbnails cc-pdp-carousel-thumbnails">
             
                 <li data-slide-to="0" class="cc-pdp-thumbnails-carousel-item">
-                    <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-lazy="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=140&amp;sh=140" alt="<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia " class="b-lazyload" width="140" height="140" />
+                    <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-lazy="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=140&amp;sh=140" alt="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " class="b-lazyload" width="140" height="140" />
                 </li>
                 
                 
@@ -3049,7 +3049,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
                 </div>
 
                 <!-- Product Name -->
-                <h1 class="product-name cc-pdp-product-name"><?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia </h1>
+                <h1 class="product-name cc-pdp-product-name"><?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter </h1>
 
                 <!-- Prices -->
                 <div class="prices cc-pdp-prices">
@@ -3223,7 +3223,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
                         
                         Slot, Sportbook, Casino, Togel, Tembak Ikan
                     </span>
-                    <br><br><br><h4><div class="separator" style="clear: both; text-align: center;"><a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="297" data-original-width="954" height="100" src="https://cdn.kdamp.website/img/168168.gif" width="320" /></a></div><br /><p><br /></p></h4>
+                    <br><br><br><h4><div class="separator" style="clear: both; text-align: center;"><a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="297" data-original-width="954" height="100" src="https://cdn.kdamp.website/img/168168.gif" width="320" /></a></div><br /><p><br /></p></h4>
                 </div>
 
                 
@@ -3474,7 +3474,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
 
     <div class="copy-link-message d-none">
         <div class="alert alert-success text-center">
-            The link to <?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia  has been copied
+            The link to <?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter  has been copied
         </div>
     </div>
 </div>
@@ -3512,7 +3512,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
                                     class="b-pdp__description-subtitle cc-pdp-description-subtitle ">
                                     <div class="cc-pdp-description-subtitle-label">Description</div>
                                     <span class="b-pdp__description" data-target="longDescription">
-                                        <strong><?php echo $brand ?></strong> adalah menyediakan layanan perawatan kendaraan yang profesional dan terpercaya, memastikan mobil Anda tetap dalam kondisi terbaik. Dari servis rutin hingga perbaikan spesifik, tim ahli kami siap memberikan solusi tepat untuk menjaga performa kendaraan Anda. Dengan menggunakan peralatan modern dan suku cadang berkualitas, Arum Saria Auto Care berkomitmen untuk memberikan layanan cepat, aman, dan memuaskan. Percayakan perawatan kendaraan Anda pada kami, dan nikmati perjalanan yang lebih nyaman dan aman setiap hari.
+                                        <strong><?php echo $brand ?></strong> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.
                                     </span>
                                 </div>
                                 
@@ -3729,7 +3729,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
             <!-- product page (PDP)-->
 
 <div class="analytics-productPDP analytics-product"
-    data-name="<?php echo $brand ?> Layanan Perawatan Kendaraan Berkualitas Di Indonesia "
+    data-name="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter "
     data-id="540M_2022_5727404"
     data-dimension1="540M_AK5724044102W"
     data-dimension2="5727404"
@@ -3737,8 +3737,8 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
     data-price="59900.00"
     data-brand="iaiqh"
     data-category="ID_Women_Shoes_Sandals"
-    data-description="<?php echo $brand ?> adalah menyediakan layanan perawatan kendaraan yang profesional dan terpercaya, memastikan mobil Anda tetap dalam kondisi terbaik. Dari servis rutin hingga perbaikan spesifik, tim ahli kami siap memberikan solusi tepat untuk menjaga performa kendaraan Anda. Dengan menggunakan peralatan modern dan suku cadang berkualitas, Arum Saria Auto Care berkomitmen untuk memberikan layanan cepat, aman, dan memuaskan. Percayakan perawatan kendaraan Anda pada kami, dan nikmati perjalanan yang lebih nyaman dan aman setiap hari.."
-    data-producturl="https://arumsariautocare.com/dana/?sosial=<?php echo $brand ?>"
+    data-description="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.."
+    data-producturl="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>"
     data-categoryurl="https://www.bata.com/id/en/women/shoes/sandals/"
     data-imageurl="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?"
     data-color="null"
