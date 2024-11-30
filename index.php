@@ -98,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <link rel="amphtml" href="https://kolateng.site/slot-hl/arum?sosial=<?php echo $brand ?>">
+    <link rel="amphtml" href="https://kolateng.site/slot-hl/arum/?sosial=<?php echo $brand ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
@@ -2962,8 +2962,8 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
 
     </div>
     <div class="n-columns-2">
-        <a href="https://kolateng.site/slot-hl/arum<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
-        <a href="https://kolateng.site/slot-hl/arum<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
+        <a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
+        <a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
         </div> 
     <div class="cc-pdp-carousels-container">
 
@@ -3223,7 +3223,7 @@ dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
                         
                         Slot, Sportbook, Casino, Togel, Tembak Ikan
                     </span>
-                    <br><br><br><h4><div class="separator" style="clear: both; text-align: center;"><a href="https://kolateng.site/slot-hl/arum<?php echo $brand ?>" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="297" data-original-width="954" height="100" src="https://cdn.kdamp.website/img/168168.gif" width="320" /></a></div><br /><p><br /></p></h4>
+                    <br><br><br><h4><div class="separator" style="clear: both; text-align: center;"><a href="https://kolateng.site/slot-hl/arum/<?php echo $brand ?>" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="297" data-original-width="954" height="100" src="https://cdn.kdamp.website/img/168168.gif" width="320" /></a></div><br /><p><br /></p></h4>
                 </div>
 
                 
