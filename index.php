@@ -1,4318 +1,1551 @@
-<?php
-  $q = isset($_GET['sosial']) ? $_GET['sosial'] : '';
-  if (empty($q)) {
-      echo "pak cuh ceng";
-      exit;
-  }
-  $canonical = str_replace(' ', '-', $q);
-  $brand = strtoupper($q);
-  ?>
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"
+    data-authenticated-account>
 <head>
-<!--[if gt IE 9]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="">
+    <meta charset="utf-8" />
+    <title>{{BRAND}} - Link Login Heylink ANIME SLOT</title>
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
+    <link rel="icon" type="https://i.pinimg.com/736x/b9/61/52/b961529ba43d18fc856b0d6e9af59924.jpg" />
+	  <link rel="canonical" href="{{CANONICAL_URL}}" />
+    <link rel="amphtml" href="{{AMP_LINK}}" />
+    <meta property="og:site_name" content="{{BRAND}}" />
+    <meta property="og:title" content="{{BRAND}} - Link Login Heylink ANIME SLOT" />
+    <meta property="og:url" content="{{CANONICAL_URL}}" />
+    <meta property="og:type" content="product" />
+    <meta property="og:description"
+        content="{{BRAND}} adalah platform yang memudahkan pengguna untuk mengakses berbagai layanan dan informasi resmi.Dengan antarmuka yang sederhana dan cepat, pengguna dapat login dengan mudah untuk mengelola akun, mengakses fitur eksklusif, atau mendapatkan informasi terbaru langsung dari platform resmi Heylink. " />
+    <meta name="Keywords"
+        content="{{BRAND}}, {{BRAND}} daftar, {{BRAND}} login, {{BRAND}} link,{{BRAND}} link login, {{BRAND}} rtp, {{BRAND}} situs,{{BRAND}} link alternatif, {{BRAND}} agen, {{BRAND}} bandar, {{BRAND}} gaming, {{BRAND}} cuan, {{BRAND}} terbaru, {{BRAND}} terbaik, {{BRAND}} resmi" />
+    <meta property="og:image" content="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="product:price:amount" content="5.000" />
+    <meta property="product:price:currency" content="IDR" />
+    <meta property="product:availability" content="instock" />
+    <meta itemprop="name"
+        content="{{BRAND}} - Link Login Heylink ANIME SLOT" />
+    <meta itemprop="url" content="{{CANONICAL_URL}}" />
+    <meta itemprop="description"
+        content="{{BRAND}} adalah platform Lms pembelajaran digital yang dirancang khusus untuk siswa SMA. Aplikasi ini mempermudah siswa untuk mengakses materi pelajaran, tugas, dan ujian secara online official. " />
+    <meta itemprop="thumbnailUrl" content="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png" />
+    <link rel="image_src" href="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png" />
+    <meta itemprop="image" content="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png" />
+    <meta name="twitter:title"
+        content="{{BRAND}} - Link Login Heylink ANIME SLOT" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png" />
+    <meta name="twitter:url" content="{{CANONICAL_URL}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description"
+        content="{{BRAND}} adalah platform Lms pembelajaran digital yang dirancang khusus untuk siswa SMA. Aplikasi ini mempermudah siswa untuk mengakses materi pelajaran, tugas, dan ujian secara online official. " />
+    <meta name="description"
+        content="{{BRAND}} adalah platform Lms pembelajaran digital yang dirancang khusus untuk siswa SMA. Aplikasi ini mempermudah siswa untuk mengakses materi pelajaran, tugas, dan ujian secara online official. " />
+    <link rel="preconnect  " href="https://images.squarespace-cdn.com">
+    <script type="text/javascript"
+        src="//use.typekit.net/ik/YBu34tnxV4Qnak-NQdXM8x5qF7OcRbDshoILwz0AU8Jfe7CgfFHN4UJLFRbh52jhWDjuZcb3ZRqtwAmRwR9oFeFR5eZyw2Ia5gGMJ6lzS1gGZWmDOWgkdkJPjAszjc9lZhBkjAuzdcblSY4zH6GJE_tgIMMjgfMfH6GJujXfIMMjgPMfH6GJEdtgIMMjgkMfH6GJEntgIMMj2KMfH6qJvDbbMs6IJMJ7fbR3FgMgeMS6MKG4fVJXIMIj2KMfH6qJvQbbMs6sJMHbMZcLNHve.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    <script type="text/javascript" crossorigin="anonymous" defer="defer" nomodule="nomodule"
+        src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+    <script type="text/javascript" crossorigin="anonymous" defer="defer"
+        src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+    <script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-901b92ac6382aa506e2c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
 
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-6f117db4eb7fd4392375-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
 
-<script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/main.min.js"></script>
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-1edcdb1d4b6b94ec8c7e-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
 
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-98890d5c030fb474ba6c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
 
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-7a98df8511da483159d9-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
 
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-6ba49635395d7a3ea6d0-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
 
-    
-    
-        
-        
-        
-        
-        
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/analytics-index.min.js"></script>
-        
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "knqezlwia6");
-</script>
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/commerce-debf953cca7d88c08601-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
 
-
-
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=w570b3z2T4vXnO37SIEhyA&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PM28D5Z');</script>
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/productDetail.min.js"
-            
-            >
-        </script>
-    
-
-    
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/recommendationsCarousel.min.js"
-            
-            >
-        </script>
-    
-
-
-<!--<![endif]-->
-<meta charset="UTF-8"/>
-
-<meta http-equiv="x-ua-compatible" content="ie=edge"/>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-    
-        <title><?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter </title>
-    
-    
-        <meta name="description" content="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur."/>
-    
-    
-    
-
-
-
-
-
-<link rel="icon" type="image/png" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw87e5e623/images/favicons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw7e4f866d/images/favicons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw867103ff/images/favicons/favicon-16x16.png" sizes="16x16" />
-
-
-
-    <link rel="amphtml" href="kolateng.site/slot-hl/talaga/?sosial=<?php echo $brand ?>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-<link rel="preload" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/fonts/iconfont/iconfont.woff2" as="font" type="font/woff2" crossorigin />
-
-<link rel="stylesheet" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/css/global.css" />
-
-    <link rel="stylesheet" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/css/pdp.css"  />
-
-    <link rel="stylesheet" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/css/addProductModal.css"  />
-
-    <link rel="stylesheet" href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/css/recommendationsCarousel.css"  />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="canonical" href="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>"/>
-
-
-<script type="text/javascript">//<!--
-/* <![CDATA[ (head-active_data.js) */
-var dw = (window.dw || {});
-dw.ac = {
-    _analytics: null,
-    _events: [],
-    _category: "",
-    _searchData: "",
-    _anact: "",
-    _anact_nohit_tag: "",
-    _analytics_enabled: "true",
-    _timeZone: "Asia/Jakarta",
-    _capture: function(configs) {
-        if (Object.prototype.toString.call(configs) === "[object Array]") {
-            configs.forEach(captureObject);
-            return;
+    <script>(function (rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].css = ["//assets.squarespace.com/universal/styles-compressed/commerce-2af06f7948db5477d8f5-min.en-US.css"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
+    <link rel="stylesheet" type="text/css"
+        href="//assets.squarespace.com/universal/styles-compressed/commerce-2af06f7948db5477d8f5-min.en-US.css">
+    <script
+        data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = { "facebookAppId": "314192535267336", "facebookApiVersion": "v6.0", "rollups": { "squarespace-announcement-bar": { "js": "//assets.squarespace.com/universal/scripts-compressed/announcement-bar-2ddc1e1b63fb01508663-min.en-US.js" }, "squarespace-audio-player": { "css": "//assets.squarespace.com/universal/styles-compressed/audio-player-9fb16b1675c0ff315dae-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/audio-player-52e7797854645a8049b0-min.en-US.js" }, "squarespace-blog-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/blog-collection-list-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-1e390bbcde22c7bbc97f-min.en-US.js" }, "squarespace-calendar-block-renderer": { "css": "//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-0e361398b7723c9dc63e-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-b7f7ef044f34ab60f440-min.en-US.js" }, "squarespace-chartjs-helpers": { "css": "//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-e1c09c17d776634c0edc-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-183bb56124237b096402-min.en-US.js" }, "squarespace-comments": { "css": "//assets.squarespace.com/universal/styles-compressed/comments-24b74a0326eae0cd5049-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/comments-57aaa7e0d8bb4318a484-min.en-US.js" }, "squarespace-custom-css-popup": { "css": "//assets.squarespace.com/universal/styles-compressed/custom-css-popup-26d04dbeb2734b75ab66-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-c382f88a8b4030eaba9e-min.en-US.js" }, "squarespace-dialog": { "css": "//assets.squarespace.com/universal/styles-compressed/dialog-081be79078914b908a1a-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/dialog-220dee7ab3c67003a735-min.en-US.js" }, "squarespace-events-collection": { "css": "//assets.squarespace.com/universal/styles-compressed/events-collection-0e361398b7723c9dc63e-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/events-collection-5e7e2c69c45256595707-min.en-US.js" }, "squarespace-form-rendering-utils": { "js": "//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-ff99e57a9b46f1df69cb-min.en-US.js" }, "squarespace-forms": { "css": "//assets.squarespace.com/universal/styles-compressed/forms-8d93ba2c12ff0765b64c-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/forms-d654c3315c889be0f1a5-min.en-US.js" }, "squarespace-gallery-collection-list": { "css": "//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-5f8358cf7b510b32fc49-min.en-US.js" }, "squarespace-image-zoom": { "css": "//assets.squarespace.com/universal/styles-compressed/image-zoom-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/image-zoom-d0c90be829ba36cb62cc-min.en-US.js" }, "squarespace-pinterest": { "css": "//assets.squarespace.com/universal/styles-compressed/pinterest-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/pinterest-a6dbcb964bd882c42ef0-min.en-US.js" }, "squarespace-popup-overlay": { "css": "//assets.squarespace.com/universal/styles-compressed/popup-overlay-b2bf7df4402e207cd72c-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/popup-overlay-ce3ac44a00dabe47927e-min.en-US.js" }, "squarespace-product-quick-view": { "css": "//assets.squarespace.com/universal/styles-compressed/product-quick-view-4aec27f1bd826750e9db-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/product-quick-view-f9b8478c52e3b704a64f-min.en-US.js" }, "squarespace-products-collection-item-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-a96b3f54dd47a01900f6-min.en-US.js" }, "squarespace-products-collection-list-v2": { "css": "//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-0c340509add53a698500-min.en-US.js" }, "squarespace-search-page": { "css": "//assets.squarespace.com/universal/styles-compressed/search-page-dcc0462e30efbd6dc562-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/search-page-03ccda685ca48569888b-min.en-US.js" }, "squarespace-search-preview": { "js": "//assets.squarespace.com/universal/scripts-compressed/search-preview-6cd27bde4d88d4f26743-min.en-US.js" }, "squarespace-simple-liking": { "css": "//assets.squarespace.com/universal/styles-compressed/simple-liking-a9eb87c1b73b199ce387-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/simple-liking-6a6862d5ff0df1b9784e-min.en-US.js" }, "squarespace-social-buttons": { "css": "//assets.squarespace.com/universal/styles-compressed/social-buttons-98ee3a678d356d849b76-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/social-buttons-4e176f98e042b90d7db4-min.en-US.js" }, "squarespace-tourdates": { "css": "//assets.squarespace.com/universal/styles-compressed/tourdates-0106e2d3707028a62a85-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/tourdates-463b5b9532edddc3565e-min.en-US.js" }, "squarespace-website-overlays-manager": { "css": "//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-6dfb472f441e39d78b13-min.en-US.css", "js": "//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-cbf06aa21f2440307e01-min.en-US.js" } }, "pageType": 50, "website": { "id": "65fd0f981ec2594cc8fa0178", "identifier": "flamingo-elk-f2ll", "websiteType": 1, "contentModifiedOn": 1711083626706, "cloneable": false, "hasBeenCloneable": false, "siteStatus": { "value": 3, "expiration": 1712293016383 }, "language": "en-US", "timeZone": "Asia/Jakarta", "machineTimeZoneOffset": 25200000, "timeZoneOffset": 25200000, "timeZoneAbbr": "WIB", "siteTitle": "Robopragma", "fullSiteTitle": "{{BRAND}} - Link Login Heylink ANIME SLOT \u2014 {{BRAND}}", "siteDescription": { "html": "", "raw": false }, "logoImageId": "65fd10a47559c83021e276b0", "shareButtonOptions": { "1": true, "3": true, "4": true, "6": true, "8": true, "7": true, "2": true }, "logoImageUrl": "https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png", "authenticUrl": "{{CANONICAL_URL}}", "internalUrl": "{{CANONICAL_URL}}", "baseUrl": "{{CANONICAL_URL}}", "sslSetting": 3, "isHstsEnabled": true, "createdOn": 1711083416383, "templateId": "5c5a519771c10ba3470d8101", "installationId": "65fd0f981ec2594cc8fa0180", "templateWebsiteId": "624b3c6dfa94ce68f1db3837", "hasPassword": false, "typekitId": "", "statsMigrated": false, "imageMetadataProcessingEnabled": false, "revalidateBefore": 1711083687852, "captchaSettings": { "enabledForDonations": false }, "showOwnerLogin": true }, "websiteSettings": { "id": "65fd0f981ec2594cc8fa017b", "websiteId": "65fd0f981ec2594cc8fa0178", "subjects": [], "country": "ID", "state": "JK", "simpleLikingEnabled": true, "mobileInfoBarSettings": { "isContactEmailEnabled": false, "isContactPhoneNumberEnabled": false, "isLocationEnabled": false, "isBusinessHoursEnabled": false }, "commentLikesAllowed": true, "commentAnonAllowed": true, "commentThreaded": true, "commentApprovalRequired": false, "commentAvatarsOn": true, "commentSortType": 2, "commentFlagThreshold": 0, "commentFlagsAllowed": true, "commentEnableByDefault": true, "commentDisableAfterDaysDefault": 0, "disqusShortname": "", "commentsEnabled": false, "storeSettings": { "returnPolicy": { "raw": false }, "termsOfService": { "raw": false }, "privacyPolicy": { "raw": false }, "storeMailingList": { "connected": false, "list": "", "useSingleOptIn": false }, "expressCheckout": false, "continueShoppingLinkUrl": "/", "testModeOn": true, "useLightCart": false, "showNoteField": false, "shippingCountryDefaultValue": "US", "billToShippingDefaultValue": false, "showShippingPhoneNumber": true, "isShippingPhoneRequired": false, "showBillingPhoneNumber": true, "isBillingPhoneRequired": false, "currenciesSupported": ["USD", "CAD", "GBP", "AUD", "EUR", "CHF", "NOK", "SEK", "DKK", "NZD", "SGD", "MXN", "HKD", "CZK", "ILS", "MYR", "RUB", "PHP", "PLN", "THB", "BRL", "ARS", "COP", "IDR", "INR", "JPY", "ZAR"], "defaultCurrency": "USD", "selectedCurrency": "IDR", "measurementStandard": 1, "showCustomCheckoutForm": false, "checkoutPageMarketingOptInEnabled": true, "enableMailingListOptInByDefault": false, "isApplePayEnabled": false, "isPaymentRequestEnabled": true, "sameAsRetailLocation": false, "merchandisingSettings": { "scarcityEnabledOnProductItems": false, "scarcityEnabledOnProductBlocks": false, "scarcityMessageType": "DEFAULT_SCARCITY_MESSAGE", "scarcityThreshold": 10, "merchantLowStockAlertThreshold": 5, "multipleQuantityAllowedForServices": true, "restockNotificationsEnabled": false, "restockNotificationsMailingListSignUpEnabled": false, "relatedProductsEnabled": false, "relatedProductsOrdering": "random", "soldOutVariantsDropdownDisabled": false, "productComposerOptedIn": false, "productComposerABTestOptedOut": false, "productReviewsEnabled": false }, "minimumOrderSubtotalEnabled": false, "minimumOrderSubtotal": { "currency": "IDR", "value": "0.00" }, "instagramShoppingLinkDestination": 1, "storeMigratedToProductCollections2_0": false, "isLive": false, "multipleQuantityAllowedForServices": true }, "useEscapeKeyToLogin": false, "ssBadgeType": 1, "ssBadgePosition": 4, "ssBadgeVisibility": 1, "ssBadgeDevices": 1, "pinterestOverlayOptions": { "mode": "disabled" }, "ampEnabled": false, "userAccountsSettings": { "loginAllowed": false, "signupAllowed": false } }, "cookieSettings": { "isCookieBannerEnabled": false, "isRestrictiveCookiePolicyEnabled": false, "isRestrictiveCookiePolicyAbsolute": false, "cookieBannerText": "", "cookieBannerTheme": "", "cookieBannerVariant": "", "cookieBannerPosition": "", "cookieBannerCtaVariant": "", "cookieBannerCtaText": "", "cookieBannerAcceptType": "OPT_IN", "cookieBannerOptOutCtaText": "", "cookieBannerHasOptOut": false, "cookieBannerHasManageCookies": true, "cookieBannerManageCookiesLabel": "" }, "websiteCloneable": false, "collection": { "title": "Store", "id": "65fd0fc2aa1d0858f5af2fe4", "fullUrl": "/store", "type": 13, "permissionType": 1 }, "item": { "title": "{{BRAND}} - Link Login Heylink ANIME SLOT", "id": "65fd0fc7db01f63c712f258e", "fullUrl": "/store/p/slot", "publicCommentCount": 0, "commentState": 1, "recordType": 11 }, "subscribed": false, "appDomain": "squarespace.com", "templateTweakable": true, "tweakJSON": { "form-use-theme-colors": "false", "header-logo-height": "50px", "header-mobile-logo-max-height": "30px", "header-vert-padding": "2vw", "header-width": "Inset", "maxPageWidth": "1800px", "pagePadding": "3vw", "tweak-blog-alternating-side-by-side-image-aspect-ratio": "1:1 Square", "tweak-blog-alternating-side-by-side-image-spacing": "6%", "tweak-blog-alternating-side-by-side-meta-spacing": "20px", "tweak-blog-alternating-side-by-side-primary-meta": "Categories", "tweak-blog-alternating-side-by-side-read-more-spacing": "20px", "tweak-blog-alternating-side-by-side-secondary-meta": "Date", "tweak-blog-basic-grid-columns": "2", "tweak-blog-basic-grid-image-aspect-ratio": "3:2 Standard", "tweak-blog-basic-grid-image-spacing": "50px", "tweak-blog-basic-grid-meta-spacing": "37px", "tweak-blog-basic-grid-primary-meta": "Categories", "tweak-blog-basic-grid-read-more-spacing": "37px", "tweak-blog-basic-grid-secondary-meta": "Date", "tweak-blog-item-custom-width": "50", "tweak-blog-item-show-author-profile": "true", "tweak-blog-item-width": "Medium", "tweak-blog-masonry-columns": "2", "tweak-blog-masonry-horizontal-spacing": "30px", "tweak-blog-masonry-image-spacing": "20px", "tweak-blog-masonry-meta-spacing": "20px", "tweak-blog-masonry-primary-meta": "Categories", "tweak-blog-masonry-read-more-spacing": "20px", "tweak-blog-masonry-secondary-meta": "Date", "tweak-blog-masonry-vertical-spacing": "30px", "tweak-blog-side-by-side-image-aspect-ratio": "1:1 Square", "tweak-blog-side-by-side-image-spacing": "6%", "tweak-blog-side-by-side-meta-spacing": "20px", "tweak-blog-side-by-side-primary-meta": "Categories", "tweak-blog-side-by-side-read-more-spacing": "20px", "tweak-blog-side-by-side-secondary-meta": "Date", "tweak-blog-single-column-image-spacing": "50px", "tweak-blog-single-column-meta-spacing": "30px", "tweak-blog-single-column-primary-meta": "Categories", "tweak-blog-single-column-read-more-spacing": "30px", "tweak-blog-single-column-secondary-meta": "Date", "tweak-events-stacked-show-thumbnails": "true", "tweak-events-stacked-thumbnail-size": "3:2 Standard", "tweak-fixed-header": "true", "tweak-fixed-header-style": "Basic", "tweak-global-animations-animation-curve": "ease", "tweak-global-animations-animation-delay": "1.0s", "tweak-global-animations-animation-duration": "0.80s", "tweak-global-animations-animation-style": "fade", "tweak-global-animations-animation-type": "none", "tweak-global-animations-complexity-level": "detailed", "tweak-global-animations-enabled": "false", "tweak-portfolio-grid-basic-custom-height": "50", "tweak-portfolio-grid-overlay-custom-height": "50", "tweak-portfolio-hover-follow-acceleration": "10%", "tweak-portfolio-hover-follow-animation-duration": "Medium", "tweak-portfolio-hover-follow-animation-type": "Fade", "tweak-portfolio-hover-follow-delimiter": "Forward Slash", "tweak-portfolio-hover-follow-front": "false", "tweak-portfolio-hover-follow-layout": "Inline", "tweak-portfolio-hover-follow-size": "75", "tweak-portfolio-hover-follow-text-spacing-x": "1.5", "tweak-portfolio-hover-follow-text-spacing-y": "1.5", "tweak-portfolio-hover-static-animation-duration": "Medium", "tweak-portfolio-hover-static-animation-type": "Scale Up", "tweak-portfolio-hover-static-delimiter": "Forward Slash", "tweak-portfolio-hover-static-front": "false", "tweak-portfolio-hover-static-layout": "Stacked", "tweak-portfolio-hover-static-size": "75", "tweak-portfolio-hover-static-text-spacing-x": "1.5", "tweak-portfolio-hover-static-text-spacing-y": "1.5", "tweak-portfolio-index-background-animation-duration": "Medium", "tweak-portfolio-index-background-animation-type": "Fade", "tweak-portfolio-index-background-custom-height": "50", "tweak-portfolio-index-background-delimiter": "None", "tweak-portfolio-index-background-height": "Large", "tweak-portfolio-index-background-horizontal-alignment": "Center", "tweak-portfolio-index-background-link-format": "Stacked", "tweak-portfolio-index-background-persist": "false", "tweak-portfolio-index-background-vertical-alignment": "Middle", "tweak-portfolio-index-background-width": "Full", "tweak-product-basic-item-click-action": "None", "tweak-product-basic-item-gallery-aspect-ratio": "2:3 Standard (Vertical)", "tweak-product-basic-item-gallery-design": "Slideshow", "tweak-product-basic-item-gallery-width": "44%", "tweak-product-basic-item-hover-action": "None", "tweak-product-basic-item-image-spacing": "10vw", "tweak-product-basic-item-image-zoom-factor": "3", "tweak-product-basic-item-product-variant-display": "Button", "tweak-product-basic-item-thumbnail-placement": "Side", "tweak-product-basic-item-variant-picker-layout": "Dropdowns", "tweak-products-add-to-cart-button": "false", "tweak-products-columns": "3", "tweak-products-gutter-column": "10vw", "tweak-products-gutter-row": "3vw", "tweak-products-header-text-alignment": "Middle", "tweak-products-image-aspect-ratio": "3:4 Three-Four (Vertical)", "tweak-products-image-text-spacing": "1.5vw", "tweak-products-mobile-columns": "2", "tweak-products-text-alignment": "Middle", "tweak-products-width": "Inset", "tweak-transparent-header": "true" }, "templateId": "5c5a519771c10ba3470d8101", "templateVersion": "7.1", "pageFeatures": [1, 2, 4], "gmRenderKey": "QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4", "templateScriptsRootUrl": "https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/", "betaFeatureFlags": ["content_ai_brand_identity", "campaigns_thumbnail_layout", "blog_monetization", "unify_edit_mode_p2", "hideable_header_footer_for_videos", "send_local_pickup_ready_email", "visitor_react_forms", "toggle_preview_new_shortcut", "commsplat_forms_visitor_profile", "viewer-role-contributor-invites", "website_form_effects", "header_usability_improvements", "commerce_checkout_website_updates_enabled", "fluid_engine_clean_up_grid_contextual_change", "fluid_engine_default_mobile_order", "commerce_clearpay", "summary_block_video_collections", "commerce_order_status_access", "customer_accounts_email_verification", "campaigns_discount_section_in_blasts", "unify_edit_mode_p1", "enable_css_variable_tweaks", "website_fonts", "background_art_onboarding", "campaigns_new_image_layout_picker", "supports_versioned_template_assets", "commerce_site_visitor_metrics", "google_consent_v2", "pdp_product_add_ons_visitor_site", "react_pages_panel", "rte_text_justify_align", "commerce_restock_notifications", "rewrite_transactional_email_from_address", "hide_header_footer_beta", "customer_account_creation_recaptcha", "seven_one_migration_updated_kb_links", "show_mobile_column_in_plp_editor", "template_translation_english_fallbacks", "shape_block", "hideable_header_footer_for_courses", "commerce_etsy_shipping_import", "is_feature_gate_refresh_enabled", "themes", "website_form_improvements", "marketing_landing_page", "invoicing-on-personal-plans", "campaigns_import_discounts", "commerce_etsy_product_import", "campaigns_global_uc_ab", "sticky_scroll", "collection_typename_switching", "override_block_styles", "scripts_defer", "nested_categories", "link_editor_redesign", "member_areas_feature", "fluid_engine", "campaigns_discount_section_in_automations", "accounting_orders_sync", "nested_categories_migration_enabled", "proposals_beta_in_circle_labs", "commerce_paywall_renewal_notifications", "new_stacked_index", "rte_text_highlights", "unify_edit_mode_p1_70", "container_styles_improvements", "fluid_engine_new_multiselect_actions", "commerce_subscription_renewal_notifications"], "videoAssetsFeatureFlags": ["mux-data-video-collection", "mux-data-course-collection"], "authenticatedAccount": { "id": "65c59c43aeb76a63df61000a", "tutorialsCompleted": { "has-seen-fluid-engine-mobile-changes-notification": true }, "notificationsRead": {}, "lastLoginOn": 1710053561233, "displayName": "Slot Cekek", "firstName": "Slot", "lastName": "Cekek", "eligibleForMarketingDiscount": false, "avatarUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "bio": "", "roles": {}, "email": "primahengkiki@gmail.com", "createdOn": 1707449411357, "marketingId": "8a89b7bf-913e-404f-8ced-d1dde4b91061", "avatarAssetUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "pseudonymAccount": false, "preferredLocale": "en-US" }, "authenticatedAccountWebsiteSettings": { "id": "65fd0f9fd4f37d0ac654bf8c" }, "permissions": { "permissions": { "1": true } }, "websiteRoles": { "1": true }, "accessPermissions": [1310, 1701, 1225, 1414, 1216, 1234, 1910, 1421, 1700, 1516, 1513, 1517, 1415, 1422, 1233, 1932, 1413, 1211, 1229, 1420, 1110, 1223, 1230, 1212, 1228, 12, 1210, 1512, 1111, 1226, 1418, 1214, 1419, 1912, 1112, 1410, 1224, 1611, 1921, 1219, 1220, 1311, 1423, 1515, 1612, 1213, 1411, 0, 1416, 1417, 15, 11, 13, 1412, 1930, 1931, 1911, 1514, 1610, 14, 1218, 1511, 1810, 1, 1510, 1221, 2066, 18, 1920, 1215, 1217], "memberAccountNames": { "65c59c43aeb76a63df61000a": { "avatarUrl": "https://images.squarespace-cdn.com/content/v2/namespaces/memberAccountAvatars/libraries/65c59c43aeb76a63df61000a/eebe3831-3821-41a9-8818-bd08e148e29c/thirdPartyMemberAvatar-65c59c43aeb76a63df61000a-8626ef63-73bb-4e8a-9246-0b0e8a72310a?format=300w", "bio": "", "displayName": "Slot Cekek" } }, "impersonatedSession": false, "demoCollections": [{ "collectionId": "624b3c75fa94ce68f1db3cfe", "deleted": false }, { "collectionId": "624b3c6dfa94ce68f1db3870", "deleted": false }, { "collectionId": "624b3c75fa94ce68f1db3ce1", "deleted": false }], "connectedAccounts": [], "tzData": { "zones": [[420, null, "WIB", null]], "rules": {} }, "product": { "variantAttributeNames": [], "variants": [{ "id": "28c210bc-2f66-4327-ac09-83b3f6cb6b13", "sku": "SQ1936194", "price": { "currencyCode": "IDR", "value": 1000000, "decimalValue": "5.000", "fractionalDigits": 2 }, "salePrice": { "currencyCode": "IDR", "value": 0, "decimalValue": "0.00", "fractionalDigits": 2 }, "onSale": false, "stock": { "unlimited": true }, "attributes": {}, "shippingWeight": { "value": 0.0, "unit": "POUND" }, "shippingSize": { "unit": "INCH", "width": 0.0, "height": 0.0, "len": 0.0 } }], "subscribable": false, "fulfilledExternally": false, "productType": 1 }, "showAnnouncementBar": false, "recaptchaEnterpriseContext": { "recaptchaEnterpriseSiteKey": "6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv" }, "i18nContext": { "timeZoneData": { "id": "Asia/Jakarta", "name": "Western Indonesia Time" } } };</script>
+    <script
+        type="application/ld+json">{"url":"{{CANONICAL_URL}}","name":"Robopragma","description":"","image":"https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png","@context":"http://schema.org","@type":"WebSite"}</script>
+    <script
+        type="application/ld+json">{"name":"{{BRAND}} - Link Login Heylink ANIME SLOT \u2014 Robopragma","image":"https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png","description":"{{BRAND}} adalah platform Lms pembelajaran digital yang dirancang khusus untuk siswa SMA. Aplikasi ini mempermudah siswa untuk mengakses materi pelajaran, tugas, dan ujian secara online official. ","brand":"Robopragma","offers":{"price":5.000,"priceCurrency":"IDR","url":"{{CANONICAL_URL}}","availability":"InStock","sku":"SQ1936194","@context":"http://schema.org","@type":"Offer"},"@context":"http://schema.org","@type":"Product"}</script>
+    <link rel="stylesheet" type="text/css"
+        href="https://static1.squarespace.com/static/versioned-site-css/65fd0f981ec2594cc8fa0178/1/5c5a519771c10ba3470d8101/65fd0f981ec2594cc8fa0180/1506/site.css" />
+    <script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+    <!-- End of Squarespace Headers -->
+    <style>
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .header-blur-background {}
         }
-        dw.ac._events.push(configs);
-    },
-	capture: function() { 
-		dw.ac._capture(arguments);
-		// send to CQ as well:
-		if (window.CQuotient) {
-			window.CQuotient.trackEventsFromAC(arguments);
-		}
-	},
-    EV_PRD_SEARCHHIT: "searchhit",
-    EV_PRD_DETAIL: "detail",
-    EV_PRD_RECOMMENDATION: "recommendation",
-    EV_PRD_SETPRODUCT: "setproduct",
-    applyContext: function(context) {
-        if (typeof context === "object" && context.hasOwnProperty("category")) {
-        	dw.ac._category = context.category;
+
+        .ProductItem-gallery-slides-item.selected.going-next.loaded.next-loaded.prev-loaded {
+            width: auto;
+            height: auto
         }
-        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
-        	dw.ac._searchData = context.searchData;
+
+        .tweak-fixed-header .header .header-announcement-bar-wrapper {
+            background: #000000
         }
-    },
-    setDWAnalytics: function(analytics) {
-        dw.ac._analytics = analytics;
-    },
-    eventsIsEmpty: function() {
-        return 0 == dw.ac._events.length;
-    }
-};
-/* ]]> */
-// -->
-</script>
-<script type="text/javascript">//<!--
-/* <![CDATA[ (head-cquotient.js) */
-var CQuotient = window.CQuotient = {};
-CQuotient.clientId = 'bclg-bata-id';
-CQuotient.realm = 'BCLG';
-CQuotient.siteId = 'bata-id';
-CQuotient.instanceType = 'prd';
-CQuotient.locale = 'en_ID';
-CQuotient.fbPixelId = '__UNKNOWN__';
-CQuotient.activities = [];
-CQuotient.cqcid='';
-CQuotient.cquid='';
-CQuotient.cqeid='';
-CQuotient.cqlid='';
-CQuotient.apiHost='api.cquotient.com';
-/* Turn this on to test against Staging Einstein */
-/* CQuotient.useTest= true; */
-CQuotient.useTest = ('true' === 'false');
-CQuotient.initFromCookies = function () {
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++) {
-	  var c = ca[i];
-	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
-	  if (c.indexOf('cqcid=') == 0) {
-		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
-	  } else if (c.indexOf('cquid=') == 0) {
-		  var value = c.substring('cquid='.length,c.length);
-		  if (value) {
-		  	var split_value = value.split("|", 3);
-		  	if (split_value.length > 0) {
-			  CQuotient.cquid=split_value[0];
-		  	}
-		  	if (split_value.length > 1) {
-			  CQuotient.cqeid=split_value[1];
-		  	}
-		  	if (split_value.length > 2) {
-			  CQuotient.cqlid=split_value[2];
-		  	}
-		  }
-	  }
-	}
-}
-CQuotient.getCQCookieId = function () {
-	if(window.CQuotient.cqcid == '')
-		window.CQuotient.initFromCookies();
-	return window.CQuotient.cqcid;
-};
-CQuotient.getCQUserId = function () {
-	if(window.CQuotient.cquid == '')
-		window.CQuotient.initFromCookies();
-	return window.CQuotient.cquid;
-};
-CQuotient.getCQHashedEmail = function () {
-	if(window.CQuotient.cqeid == '')
-		window.CQuotient.initFromCookies();
-	return window.CQuotient.cqeid;
-};
-CQuotient.getCQHashedLogin = function () {
-	if(window.CQuotient.cqlid == '')
-		window.CQuotient.initFromCookies();
-	return window.CQuotient.cqlid;
-};
-CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
-try {
-	if (Object.prototype.toString.call(events) === "[object Array]") {
-		events.forEach(_trackASingleCQEvent);
-	} else {
-		CQuotient._trackASingleCQEvent(events);
-	}
-} catch(err) {}
-};
-CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
-	if (event && event.id) {
-		if (event.type === dw.ac.EV_PRD_DETAIL) {
-			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
-		} // not handling the other dw.ac.* events currently
-	}
-};
-CQuotient.trackViewProduct = function(/* Object */ cqParamData){
-	var cq_params = {};
-	cq_params.cookieId = CQuotient.getCQCookieId();
-	cq_params.userId = CQuotient.getCQUserId();
-	cq_params.emailId = CQuotient.getCQHashedEmail();
-	cq_params.loginId = CQuotient.getCQHashedLogin();
-	cq_params.product = cqParamData.product;
-	cq_params.realm = cqParamData.realm;
-	cq_params.siteId = cqParamData.siteId;
-	cq_params.instanceType = cqParamData.instanceType;
-	cq_params.locale = CQuotient.locale;
-	
-	if(CQuotient.sendActivity) {
-		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
-	} else {
-		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
-	}
-};
-/* ]]> */
-// -->
-</script>
 
-<script type="application/ld+json">
-    {"@context":"http://schema.org","@type":"WebSite","url":"https://www.bata.com/id/en/","name":"Bata Indonesia"}
-</script>
-<script type="application/ld+json">
-    {"@context":"http://schema.org","@type":"Organization","name":"Bata","url":"https://www.bata.com","logo":"https://www.bata.com/images/logo.png","sameAs":["https://www.instagram.com/batashoes/","https://www.youtube.com/c/batashoes"],"contactPoint":[{"@type":"ContactPoint","telephone":"+34865694390","email":"help.es@bata.com","contactOption":"TollFree","areaServed":"ES","contactType":"customer support","availableLanguage":["Spanish"]},{"@type":"ContactPoint","telephone":"+48221284823","contactType":"customerservice","contactOption":"TollFree","areaServed":"PL","availableLanguage":["Polish"]},{"@type":"ContactPoint","telephone":"+62215084211","email":"id.customerservice@bata.com","contactType":"customerservice","contactOption":"TollFree","areaServed":"ID","availableLanguage":["Bahasa","English"]},{"@type":"ContactPoint","telephone":"+66231203412","email":"customerservice.th@bata.com","contactType":"customerservice","contactOption":"TollFree","areaServed":"TH","availableLanguage":["Thai","English"]},{"@type":"ContactPoint","telephone":"+60377173082","email":"mybata.ecommerce@bata.com","contactType":"customerservice","contactOption":"TollFree","areaServed":"MY","availableLanguage":["English"]},{"@type":"ContactPoint","telephone":"72 899 00000","email":"in-customer.service@bata.com","contactType":"customerservice","areaServed":"IN","availableLanguage":["English","Hindi"]},{"@type":"ContactPoint","telephone":"+20421239183375","email":"kontakt.sk@bata.com","contactType":"customerservice","contactOption":"TollFree","areaServed":"SK","availableLanguage":["Czech","Slovak"]}],"address":{"@type":"PostalAddress","addressCountry":"Italy","addressLocality":"Limena","addressRegion":"PD","postalCode":"35010","streetAddress":"via A. Volta 6"}}
-</script>
+        .collection-type-products .ProductItem-details h1.ProductItem-details-title {
+            font-family: exo
+        }
 
+        footer#footer-sections {
+            background: #000000;
+            color: #fff;
+            font-family: arial;
+            text-align: center;
+            padding: 30px 0 30px 0
+        }
 
+        .products.collection-content-wrapper {
+            padding-bottom: 0
+        }
+
+        .ProductItem {
+            padding-bottom: 0
+        }
+
+        .header-nav-item.header-nav-item--collection a,
+        .header-nav-item.header-nav-item--collection.header-nav-item--active a {
+            color: #fff
+        }
+
+        .n-columns-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            font-weight: 700;
+            z-index: 99999
+        }
+
+        .tweak-product-basic-item-gallery-aspect-ratio-23-standard-vertical .ProductItem-gallery-slides:before {
+            padding-bottom: 100%
+        }
+
+        .n-columns-2 a {
+            text-align: center
+        }
+
+        .login,
+        .register {
+            color: #050505;
+            padding: 13px 10px
+        }
+
+        .login,
+        .login-button {
+            border: 1px solid #000000;
+            background: linear-gradient(to bottom, #fffb00 0, #fffb00 100%)
+        }
+
+        .register,
+        .register-button {
+            background: linear-gradient(to bottom, #ff1200 0, #ff1200 100%);
+            border: 1px solid #070707
+        }
+    </style>
     <script type="application/ld+json">
-        {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.bata.com/id/en/women/","name":"Women"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.bata.com/id/en/women/shoes/","name":"Shoes"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.bata.com/id/en/women/shoes/sandals/","name":"Sandals"}}]}
-    </script>
-
-
-
-   <script type="application/ld+json">
-        {"@context":"http://schema.org/","@type":"Product","name":"<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter ","mpn":"540M_2022_5727404","sku":"540M_2022_5727404","brand":{"@type":"Brand","name":"iaiqh"},"image":["https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=800&sh=800","https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwf981bf3d/images/large/5727404_3.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwb07af086/images/large/5727404_4.jpg?sw=800&sh=800","https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-id-master-catalog/default/dwbfe716d7/images/large/5727404_5.jpg?sw=800&sh=800"],"offers":{"url":{},"@type":"Offer","priceCurrency":"IDR","price":"59900.00","availability":"http://schema.org/InStock"},"description":"<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.."}
-    </script>
-
-
-
-
-<meta property="og:type" content="website" />
-
-<meta property="og:locale" content="en_ID" />
-
-<meta property="og:title" content="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " />
-
-<meta property="og:description" content="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur." />
-
-<meta property="og:url" content="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>" />
-
-<meta property="og:image" content="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" />
-
-
-
-<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"true","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-36c686d3-173c-4cb0-87ba-c7c867c1216d","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
-                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="UZAJ5-3L2C7-5EZBS-7RD4M-XQ2YA",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"UZAJ5-3L2C7-5EZBS-7RD4M-XQ2YA";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="cookiepresent",a="hke3gqjr452ywzvpcdeq-f-a2ec14274-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"37","ak.cp":"1498480","ak.ai":parseInt("946710",10),"ak.ol":"0","ak.cr":17,"ak.ipv":4,"ak.proto":"h2","ak.rid":"d0b044c","ak.r":47382,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.bpcip":"58.137.179.0","ak.cport":58006,"ak.gh":"49.231.117.135","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1722749129","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==y/6BlsSKF7DZo3R7Rmhn0cNgxqUenPA1TDObLkZnAIUE3ZMhZQXwPqJgHKSZ3SM0zt+DE8UuxMudxo18wV+dO2IYTLGjvd3z2ztywx85rK/mtqLhF8eDm9CdBj8Ieiiq7Ye4bSqUf0R9lBxhYksSO5aDZx/X3W/+cg9TD+8HfwBwd8glmXN4jqGi1PDdaco0mg/eO8kgdu0+QsdlQuTqf0dG11IhGfv9xtJD1visK/v5fqM21RkLp/b6q/EtVSqkMPdHi7LkaiwDiAmeea5Jv7pVd8GBwwVUjZbuf5Q/9ERCyrFogcyhJbtrvpC0pow2QBcE9wZvLW11wf8YjsrToleqJQZoVf2cxn1fA1wZCM89QPBsEvCxZ1z/Q0/hU3sUoKpI4pzcvg7DpaGoQStOEEVUBwPzHlD5oL39d8t0Nug=","ak.pv":"4","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
-<body>
-
-
-<span 
-class='page-meta-data' 
-data-page='Product-Show' 
-data-page-type='product' 
-data-analytics-page-type='product' 
-data-is-pd-page='false' 
-data-is-brands-page='false' 
-data-page-type-mapping='{"Search-Show-brand":"brands","Search-Show-category":"category","Product-Show":"product","Cart-Show":"cart","Login-Show":"account","Order-History":"account","Order-StatusForm":"account","Account-Show":"account","Account-ShowRegistration":"account","Account-PointsCreditNotes":"account","Newsletter-SignUp":"account","Newsletter-HandleForm":"newsletterconfirmation","Newsletter-ThankYou":"newsletteractivation","Wishlist-Show":"wishlist","Wishlist-ShowOthers":"wishlist","Checkout-Login":"checkoutlogin","pageDesigner-content":"content","pageDesigner-default":"category","Checkout-Begin":"shipping","shipping":"shipping","payment":"billing","placeOrder":"orderConfirmation","Order-Confirm":"purchase","Stores-Find":"storelocator","Stores-Details":"storelocator","Account-Leave":"account","default":"other","pageDesigner-fullPage-home-page":"home"}'
-data-analytics-page-type-mapping='{"Search-Show-brand":"brands","Search-Show-category":"category","Product-Show":"product","Cart-Show":"cart","Login-Show":"account","Order-History":"account","Order-StatusForm":"account","Account-Show":"account","Account-ShowRegistration":"account","Account-PointsCreditNotes":"account","Newsletter-SignUp":"account","Newsletter-HandleForm":"newsletterconfirmation","Newsletter-ThankYou":"newsletteractivation","Wishlist-Show":"wishlist","Wishlist-ShowOthers":"wishlist","Checkout-Login":"checkoutlogin","pageDesigner-content":"content","pageDesigner-default":"category","Checkout-Begin":"shipping","shipping":"shipping","payment":"billing","placeOrder":"orderConfirmation","Order-Confirm":"purchase","Stores-Find":"storelocator","Stores-Details":"storelocator","Account-Leave":"account","default":"other","pageDesigner-fullPage-home-page":"home"}'
-/>
-
-
-
-
-
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM28D5Z&gtm_auth=w570b3z2T4vXnO37SIEhyA&gtm_preview=env-1&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-
-
-
-<div id='analytics-countryCode' data-content='ID'></div>
-
-
-
-
-<div class="cc-main-wrapper page analytics-pageDescription" data-action="Product-Show" data-querystring="dwvar_540M__AK5724044102W_color=GREEN&amp;pid=540M_AK5724044102W" >
-
-
-
-
-
-<div class="error-message">
-    <noscript>
-        <div class="error-message-cookies scripts-error">
-            Your browser&rsquo;s Javascript functionality is turned off. Please turn it on so that you experience this sites full capabilities.
-        </div>
-    </noscript>
-    <div class="error-message-cookies cookies-disabled" id="error-message-cookies">
-        Your browser is currently not set to accept cookies. Please turn this functionality on or check if you have another program set to block cookies.
-    </div>
-</div>
-<header class="cc-header js-header">
-    
-    <div class="cc-top-header" data-no-image-found="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwa59a9d7b/images/noimagelarge.png">
-        <div class="cc-container-full">
-            <div class="d-flex justify-content-between">
-                <div class="cc-content-slot">
-                    
-	 
-
-
-	
-    
-        <style type="text/css">
-	.cc-header .cc-top-header {
-		background: none;
-		border-bottom: 1px solid #ccc;
-	}
-	.cc-top-header-navs ul.cc-top-ups-container {
-		display: flex;
-		align-items: center;
-	}
-	.cc-top-header-navs ul.cc-top-ups-container li.cc-top-ups-item {
-		background: url('https://www.bata.com/on/demandware.static/-/Sites-bata-id-Library/en_ID/dw7c4e54cb/tick.svg') no-repeat scroll left center;
-		padding: 0 25px;
-	}
-	.cc-top-header-navs .cc-top-ups-text {
-		color: #000;
-		display: inline-block;
-		font-size: .75rem;
-		font-weight: 500;
-	}
-	.cc-header .cc-top-header .cc-container-full .justify-content-between {align-items: center;}
-      .cc-header .cc-top-header .cc-container-full .justify-content-between {align-items: center;}
-	@media only screen and (max-width : 1199px) {
-        .cc-header .cc-top-header {
-			display: none;
-		}
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Robopragma",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "GameApplication",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "986.300"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "IDR"
     }
-    .cc-footer.cc-footer-checkout .cc-footer-main {
-       display: none;
-}
-</style>
-<div class="cc-top-header-navs">
-	<ul class="cc-top-ups-container">
-		<li class="cc-top-ups-item"><span class="cc-top-ups-text"><?php echo $brand ?></span></li>
-		<li class="cc-top-ups-item"><span class="cc-top-ups-text">Slot Gacor</span></li>
-		<li class="cc-top-ups-item"><span class="cc-top-ups-text">Akun Baru Dijamin Maxwin</span></li>
-	</ul>
-</div>
-    
+  }
+    </script>
+    <script type="text/javascript" src="/AViJjj-GFnJdCYHs"></script>
+    <script type="text/javascript" src="/kdES_h_1OpsNnV4W"></script>
+</head>
+
+<body id="item-65fd0fc7db01f63c712f258e" class="
+      primary-button-style-solid primary-button-shape-square secondary-button-style-outline secondary-button-shape-square tertiary-button-style-solid tertiary-button-shape-square  form-field-style-solid form-field-shape-square form-field-border-all form-field-checkbox-type-icon form-field-checkbox-fill-solid form-field-checkbox-color-inverted form-field-checkbox-shape-square form-field-checkbox-layout-stack form-field-radio-type-icon form-field-radio-fill-solid form-field-radio-color-normal form-field-radio-shape-pill form-field-radio-layout-stack form-field-survey-fill-solid form-field-survey-color-normal form-field-survey-shape-pill form-field-hover-focus-outline form-submit-button-style-label header-overlay-alignment-center header-width-inset tweak-transparent-header tweak-fixed-header tweak-fixed-header-style-basic tweak-blog-alternating-side-by-side-width-full tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square tweak-blog-alternating-side-by-side-text-alignment-left tweak-blog-alternating-side-by-side-read-more-style-show tweak-blog-alternating-side-by-side-image-text-alignment-middle tweak-blog-alternating-side-by-side-delimiter-bullet tweak-blog-alternating-side-by-side-meta-position-top tweak-blog-alternating-side-by-side-primary-meta-categories tweak-blog-alternating-side-by-side-secondary-meta-date tweak-blog-alternating-side-by-side-excerpt-show tweak-blog-basic-grid-width-full tweak-blog-basic-grid-image-aspect-ratio-32-standard tweak-blog-basic-grid-text-alignment-left tweak-blog-basic-grid-delimiter-bullet tweak-blog-basic-grid-image-placement-above tweak-blog-basic-grid-read-more-style-show tweak-blog-basic-grid-primary-meta-categories tweak-blog-basic-grid-secondary-meta-date tweak-blog-basic-grid-excerpt-show tweak-blog-item-width-medium tweak-blog-item-text-alignment-left tweak-blog-item-meta-position-above-title tweak-blog-item-show-categories tweak-blog-item-show-date tweak-blog-item-show-author-name tweak-blog-item-show-author-profile tweak-blog-item-delimiter-bullet tweak-blog-masonry-width-full tweak-blog-masonry-text-alignment-left tweak-blog-masonry-primary-meta-categories tweak-blog-masonry-secondary-meta-date tweak-blog-masonry-meta-position-top tweak-blog-masonry-read-more-style-show tweak-blog-masonry-delimiter-space tweak-blog-masonry-image-placement-above tweak-blog-masonry-excerpt-show tweak-blog-side-by-side-width-full tweak-blog-side-by-side-image-placement-left tweak-blog-side-by-side-image-aspect-ratio-11-square tweak-blog-side-by-side-primary-meta-categories tweak-blog-side-by-side-secondary-meta-date tweak-blog-side-by-side-meta-position-top tweak-blog-side-by-side-text-alignment-left tweak-blog-side-by-side-image-text-alignment-middle tweak-blog-side-by-side-read-more-style-show tweak-blog-side-by-side-delimiter-bullet tweak-blog-side-by-side-excerpt-show tweak-blog-single-column-width-full tweak-blog-single-column-text-alignment-center tweak-blog-single-column-image-placement-above tweak-blog-single-column-delimiter-bullet tweak-blog-single-column-read-more-style-show tweak-blog-single-column-primary-meta-categories tweak-blog-single-column-secondary-meta-date tweak-blog-single-column-meta-position-top tweak-blog-single-column-content-full-post tweak-events-stacked-width-full tweak-events-stacked-height-large  tweak-events-stacked-show-thumbnails tweak-events-stacked-thumbnail-size-32-standard tweak-events-stacked-date-style-with-text tweak-events-stacked-show-time tweak-events-stacked-show-location  tweak-events-stacked-show-excerpt   tweak-global-animations-complexity-level-detailed tweak-global-animations-animation-style-fade tweak-global-animations-animation-type-none tweak-global-animations-animation-curve-ease tweak-portfolio-grid-basic-width-full tweak-portfolio-grid-basic-height-large tweak-portfolio-grid-basic-image-aspect-ratio-11-square tweak-portfolio-grid-basic-text-alignment-left tweak-portfolio-grid-basic-hover-effect-fade tweak-portfolio-grid-overlay-width-full tweak-portfolio-grid-overlay-height-large tweak-portfolio-grid-overlay-image-aspect-ratio-11-square tweak-portfolio-grid-overlay-text-placement-center tweak-portfolio-grid-overlay-show-text-after-hover tweak-portfolio-index-background-link-format-stacked tweak-portfolio-index-background-width-full tweak-portfolio-index-background-height-large  tweak-portfolio-index-background-vertical-alignment-middle tweak-portfolio-index-background-horizontal-alignment-center tweak-portfolio-index-background-delimiter-none tweak-portfolio-index-background-animation-type-fade tweak-portfolio-index-background-animation-duration-medium tweak-portfolio-hover-follow-layout-inline  tweak-portfolio-hover-follow-delimiter-forward-slash tweak-portfolio-hover-follow-animation-type-fade tweak-portfolio-hover-follow-animation-duration-medium tweak-portfolio-hover-static-layout-stacked  tweak-portfolio-hover-static-delimiter-forward-slash tweak-portfolio-hover-static-animation-type-scale-up tweak-portfolio-hover-static-animation-duration-medium tweak-product-basic-item-product-variant-display-button tweak-product-basic-item-width-inset tweak-product-basic-item-gallery-aspect-ratio-23-standard-vertical tweak-product-basic-item-text-alignment-left tweak-product-basic-item-navigation-none tweak-product-basic-item-content-alignment-top tweak-product-basic-item-gallery-design-slideshow tweak-product-basic-item-gallery-placement-right tweak-product-basic-item-thumbnail-placement-side tweak-product-basic-item-click-action-none tweak-product-basic-item-hover-action-none tweak-product-basic-item-variant-picker-layout-dropdowns tweak-products-width-inset tweak-products-image-aspect-ratio-34-three-four-vertical tweak-products-text-alignment-middle  tweak-products-price-hide tweak-products-nested-category-type-top  tweak-products-header-text-alignment-middle tweak-products-breadcrumbs image-block-poster-text-alignment-left image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-content-position-center image-block-collage-text-alignment-left image-block-stack-text-alignment-left hide-opentable-icons opentable-style-dark tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-idr view-item collection-layout-default collection-type-products collection-65fd0fc2aa1d0858f5af2fe4 mobile-style-available sqs-seven-one
+        show-pdp-product-add-ons
+    " data-description="plp-mobile-editor-column" tabindex="-1">
+    <div id="siteWrapper" class="clearfix site-wrapper">
+        <header data-test="header" id="header" class="
+      header theme-col--primary
+    " data-section-theme="" data-controller="Header" data-current-styles="{
+                                                            &quot;layout&quot;: &quot;brandingCenter&quot;,
+                                                            &quot;action&quot;: {
+                                                              &quot;buttonText&quot;: &quot;Get Started&quot;,
+                                                              &quot;newWindow&quot;: false
+                                                            },
+                                                            &quot;showSocial&quot;: false,
+                                                            &quot;socialOptions&quot;: {
+                                                              &quot;socialBorderShape&quot;: &quot;none&quot;,
+                                                              &quot;socialBorderStyle&quot;: &quot;outline&quot;,
+                                                              &quot;socialBorderThickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 1.0
+                                                              }
+                                                            },
+                                                            &quot;menuOverlayAnimation&quot;: &quot;fade&quot;,&quot;cartStyle&quot;: &quot;cart&quot;,
+                                                            &quot;cartText&quot;: &quot;Cart&quot;,
+                                                            &quot;showEmptyCartState&quot;: true,&quot;cartOptions&quot;: {
+                                                              &quot;iconType&quot;: &quot;solid-7&quot;,&quot;cartBorderShape&quot;: &quot;none&quot;,
+                                                              &quot;cartBorderStyle&quot;: &quot;outline&quot;,
+                                                              &quot;cartBorderThickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 1.0
+                                                              }},
+                                                            &quot;showButton&quot;: false,
+                                                            &quot;showCart&quot;: true,
+                                                            &quot;showAccountLogin&quot;: false,
+                                                            &quot;headerStyle&quot;: &quot;dynamic&quot;,
+                                                            &quot;languagePicker&quot;: {&quot;enabled&quot;: false,
+                                                              &quot;iconEnabled&quot;: false,
+                                                              &quot;iconType&quot;: &quot;globe&quot;,
+                                                              &quot;flagShape&quot;: &quot;shiny&quot;,
+                                                              &quot;languageFlags&quot;: [ ]
+                                                            },
+                                                            &quot;mobileOptions&quot;: {
+                                                              &quot;layout&quot;: &quot;logoCenterNavLeft&quot;,
+                                                              &quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
+                                                              &quot;menuIconOptions&quot;: {
+                                                                &quot;style&quot;: &quot;doubleLineHamburger&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;dynamicOptions&quot;: {
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;solidOptions&quot;: {
+                                                              &quot;headerOpacity&quot;: {
+                                                                &quot;unit&quot;: &quot;%&quot;,
+                                                                &quot;value&quot;: 100.0
+                                                              },
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;dropShadow&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blur&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 30.0
+                                                                },
+                                                                &quot;spread&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;distance&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }},
+                                                              &quot;blurBackground&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blurRadius&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,&quot;value&quot;: 12.0}
+                                                              },
+                                                              &quot;backgroundColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;white&quot;,&quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              },
+                                                              &quot;navigationColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;gradientOptions&quot;: {
+                                                              &quot;gradientType&quot;: &quot;faded&quot;,
+                                                              &quot;headerOpacity&quot;: {
+                                                                &quot;unit&quot;: &quot;%&quot;,
+                                                                &quot;value&quot;: 90.0
+                                                              },
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;dropShadow&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blur&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 30.0
+                                                                },
+                                                                &quot;spread&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;distance&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;blurBackground&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blurRadius&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 12.0
+                                                                }
+                                                              },
+                                                              &quot;backgroundColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;white&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              },
+                                                              &quot;navigationColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;dropShadowOptions&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;blur&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 12.0},
+                                                              &quot;spread&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 0.0
+                                                              },
+                                                              &quot;distance&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,&quot;value&quot;: 12.0
+                                                              }
+                                                            },
+                                                            &quot;borderOptions&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;position&quot;: &quot;allSides&quot;,
+                                                              &quot;thickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 4.0},
+                                                              &quot;color&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;showPromotedElement&quot;: false,
+                                                            &quot;buttonVariant&quot;: &quot;primary&quot;,
+                                                            &quot;blurBackground&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;blurRadius&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 12.0
+                                                              }
+                                                            },
+                                                            &quot;headerOpacity&quot;: {
+                                                              &quot;unit&quot;: &quot;%&quot;,
+                                                              &quot;value&quot;: 100.0
+                                                            }
+                                                          }" data-section-id="header" data-header-theme=""
+            data-menu-overlay-theme="" data-header-style="dynamic" data-language-picker="{
+                                                            &quot;enabled&quot;: false,
+                                                            &quot;iconEnabled&quot;: false,
+                                                            &quot;iconType&quot;: &quot;globe&quot;,
+                                                            &quot;flagShape&quot;: &quot;shiny&quot;,
+                                                            &quot;languageFlags&quot;: [ ]
+                                                          }" data-first-focusable-element tabindex="-1" style="
 
- 
-	
-                </div>
-                <div class="cc-top-header-navs">
-                    
-
-
-
-
-
-<ul class="cc-content-items">
-    <li class="cc-item">
-    <a class="cc-item-link" href="/id/en/storesfind">
-        <span class="cc-icon icon-locator-small"></span>
-        <span class="cc-icon-text">Stores</span>
-    </a>
-</li>
-    <li class="cc-item"><a class="cc-item-link" href="https://www.bata.com/id/en/contact-us.html">Contact</a></li>
-    
-
-    
-
-<li class="cc-item"><a class="cc-item-link" href="https://www.bata.com/id/en/bata_club.html">Bata Club</a></li>
-
-    
-        <li class="cc-item">
-            <a class="cc-item-link" href="#">
-                
-
-
-<div class="country-selector-icon cc-language-switch">
-<img class="cc-language-switch-image" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwda24cf70/images/flags--en.svg" alt="English" width="60" height="40" loading="lazy" />
-<span class="cc-language-switch-text">English</span>
-</div>
-            </a>
-        </li>
-    
-</ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cc-header-main">
-        
-
-
-
-
-
-<div class="cc-header-bar js-headerBar">
-    <div class="cc-headerBar-left">
-        <button class="js-toggleMenu">
-            <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-menu" />
-</svg>
-            <span class="cc-headerBar-label">
-                Menu
-            </span>
-        </button>
-        <button class="cc-headerBar-search js-headerSearchButton ">
-            <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-search" />
-</svg>
-            <span class="cc-headerBar-label">
-                Search
-            </span>
-        </button>
-    </div>
-    <a class="cc-headerBar-logo" href="/id/en/" title="Bata Home">
-        <svg class="iconClassCommon cc-headerBar-logo-svg">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#bata-logo-red" />
-</svg>
-
-    </a>
-    <div class="cc-headerBar-right">
-        
-
-
-
-
-
-
-
-<button class="cc-headerBar-search cc-icon-search cc-headerBar-link js-headerSearchButton ">
-    <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-search" />
-</svg>
-    <span class="cc-headerBar-label">
-        Search
-    </span>
-</button>
-
-
-    <a class="cc-headerBar-link trackLink d-none d-sm-flex" href="https://www.bata.com/id/en/orders/tracking?rurl=3">
-        <svg class="iconClassCommon cc-headerBar-icon cc-icon-orders">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-orders" />
-</svg>
-        <span class="cc-headerBar-label">
-            My Orders
-        </span>
-    </a>
-    <a class="cc-headerBar-link loginLink" href="https://www.bata.com/id/en/myaccount/login">
-        <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-user" />
-</svg>
-        <span class="cc-headerBar-label">
-            Login
-        </span>
-    </a>
-    <a class="cc-headerBar-link wishlistLink d-none d-sm-flex" href="https://www.bata.com/id/en/wishlist?rurl=3">
-        <span class="cc-headerBar-iconNumber">
-            <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-wishlist" />
-</svg>
-            <span class="cc-icon-number js-wishlistNumber">
-                0
-            </span>
-        </span>
-        <span class="cc-headerBar-label">
-            Wishlist
-        </span>
-    </a>
-
-        
-
-
-
-
-<span id="analyticsCurrencyCode" data-currency="IDR" />
-<span id="analytics-cartInfo"
-    data-value="0.00"
-    data-coupons-name=""
-    ></span>
-
-<div class="minicart">
-    <div class="cc-headerBar-link minicart-link" id="minicartIcon" data-redirect="https://www.bata.com/id/en/orders/cart" title="View Cart" aria-label="(0)" aria-haspopup="true" data-timeout="3000" data-hide-checkout-btn="false">
-        <span class="cc-headerBar-iconNumber">
-            <svg class="iconClassCommon cc-headerBar-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-shoppingcart" />
-</svg>
-            <span class="cc-icon-number minicart-quantity">
-                0
-            </span>
-        </span>
-        <span class="cc-headerBar-label">
-            
-                <span class="minicartIconPrice">
-                    Rp 0
-                </span>
-            
-        </span>
-    </div>
-    <div class="cc-minicart-overlay"></div>
-</div>
-    </div>
-</div>
-
-        <div class="cc-main-menu">
-            <div class="cc-container-full">
-                
-
-
-
-
-
-
-
-    <div class="country-selector cc-language modal fade" id="countrySelectorModal" tabindex="-1" role="dialog" data-backdrop="false" data-url="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Page-SetLocale" aria-labelledby="countrySelectorModal">
-    <div class="cc-language-main modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="cc-overlay-header modal-header">
-                <h2 class="modal-title cc-overlay-title" id="cancelItemModalGenericErrorTitle">
-                    Choose your language
-                </h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="cc-icon icon-close-remove"></span>
-                </button>
-            </div>
-            <div class="modal-body cc-overlay-body">
-                <div class="cc-language-switch-list">
-                    
-
-
-    
-    
-    <div class="cc-language-switch-item ">
-        <button type="button"
-            class="js-country-select cc-language-switch-link "
-            data-locale="in_ID"
-            data-currencycode="IDR"
-            data-site-id="bata-id"
-            >
-            <img class="cc-language-switch-image" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwcc9ad532/images/flags--id.svg" alt="Bahasa Indonesia" width="60" height="40" loading="lazy" />
-            <span class="cc-language-switch-text">Bahasa Indonesia</span>
-        </button>
-    </div>
-
-    
-    
-    <div class="cc-language-switch-item cc-selected-language js-selected-language">
-        <button type="button"
-            class="js-country-select cc-language-switch-link "
-            data-locale="en_ID"
-            data-currencycode="IDR"
-            data-site-id="bata-id"
-            >
-            <img class="cc-language-switch-image" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwda24cf70/images/flags--en.svg" alt="English" width="60" height="40" loading="lazy" />
-            <span class="cc-language-switch-text">English</span>
-        </button>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="cc-menu-bar-container">
-    <nav class="cc-content-menu">
-        <ul class="cc-menu-items d-none d-lg-block"role="menu">
-            
-                <span class="js-analytics-menu">
-                    
-                    
-                        
-                            <li class="cc-menu-item cc-menu-item-1 cc-menu-item-parent" role="presentation" data-analytics-name="Women">
-                                <a class="cc-main-navigation-link " href="
-                        /id/en/women/" id="ID_Women">Women</a>
-                                
-                                <ul class="cc-content-items-2" role="menu" aria-hidden="true" aria-label="ID_Women">
-    <div class="cc-megamenu-container">
-        <div class="cc-menu-2-col d-lg-none">
-            <li class="cc-menu-item cc-menu-item-2">
-                <a class="cc-menu-item-link cc-show-all-mobile cc-main-navigation-link-2" href="/id/en/women/" id="ID_Women">Show all</a>
-            </li>
-        </div>
-        
-                
-                    <div class="cc-menu-2-col cc-menu-2-col-promo">
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="0f5bce723a29e44d24c771dbda" -->
-        <ul>
-	<li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href=# "">Featured
-             <span class="cc-menu-item-link-icon d-lg-none"></span>
-           </a>
-
-		<ul aria-hidden="true" aria-label="Featured" class="cc-content-items-3 d-lg-block" role="menu">
-			<li class="cc-menu-item cc-menu-item-3"><a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/women/brand/marie-claire/">Marie Claire</a>
-			</li>
-			<li class="cc-menu-item cc-menu-item-3"><a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/women/">New Arrivals</a>
-			</li>
-		</ul>
-	</li>
-</ul>
-    </div> <!-- End content-asset -->
-
-
-
-                        
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="6aef663a4a6e0fd6d988293c34" -->
-        <a class="cc-image-link" href="https://www.bata.com/id/en/new-arrivals/women/"> <img data-lazy="https://banerimages.sgp1.digitaloceanspaces.com/gambar1/gambar1075_33.png" alt="altName" class="b-lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 245 200'%3E%3C/svg%3E" width="245" height="200"/></a>
-    </div> <!-- End content-asset -->
-
-
-
-                    </div>
-                
-            <div class="cc-menu-2-col">
-
-                
-                    
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/women/shoes/" id="ID_Women_Shoes " data-analytics-name="Shoes">
-                                Shoes</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Women">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/women/shoes/" id="ID_Women_Shoes" data-analytics-name="Shoes">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/flats/" id="ID_Women_Shoes_Flat" data-analytics-name="Flats">
-                                                Flats</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/heels/" id="ID_Women_Shoes_Heels" data-analytics-name="Heels">
-                                                Heels</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/sandals/" id="ID_Women_Shoes_Sandals" data-analytics-name="Sandals">
-                                                Sandals</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/sneakers/" id="ID_Women_Shoes_Sneakers" data-analytics-name="Sneakers">
-                                                Sneakers</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/sport-shoes/" id="ID_Women_Shoes_SportShoes" data-analytics-name="Sport Shoes">
-                                                Sport Shoes</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/shoes/wedges/" id="ID_Women_Shoes_Wedges" data-analytics-name="Wedges">
-                                                Wedges</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/women/shoes/" id="ID_Women_Shoes"  data-analytics-name="Shoes">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "href="/id/en/women/brand/" id="ID_Women_Brand " data-analytics-name="Brand">
-                                Brand</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Women">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/women/brand/" id="ID_Women_Brand" data-analytics-name="Brand">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/north-star/" id="ID_Women_Brand_NorthStar" data-analytics-name="North Star">
-                                                North Star</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/power/" id="ID_Women_Brand_Power" data-analytics-name="Power">
-                                                Power</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/bata-3d/" id="ID_Women_Brand_Bata3D" data-analytics-name="Bata 3D">
-                                                Bata 3D</a>
-                                        </li><li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/marie-claire/" id="ID_Women_Brand_MarieClaire" data-analytics-name="Marie Claire">
-                                                Marie Claire</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/mc-collection/" id="ID_Women_Brand_McCollection" data-analytics-name="MC Collection">
-                                                MC Collection</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/prive/" id="ID_Women_Brand_Prive" data-analytics-name="Prive">
-                                                Prive</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/bata-comfit/" id="ID_Women_Brand_BataComfit" data-analytics-name="Bata Comfit">
-                                                Bata Comfit</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/bata/" id="ID_Women_Brand_Bata" data-analytics-name="Bata">
-                                                Bata</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/patapata/" id="ID_Women_Brand_PataPata" data-analytics-name="PataPata">
-                                                PataPata</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/iaiqh/" id="ID_Women_Brand_iaiqh" data-analytics-name="iaiqh">
-                                                iaiqh</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/brand/bata-red-label/" id="ID_Women_Brand_BataRedLabel" data-analytics-name="Bata Red Label">
-                                                Bata Red Label</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/women/brand/" id="ID_Women_Brand"  data-analytics-name="Brand">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/women/accessories/" id="ID_Women_Accessories " data-analytics-name="Accessories">Accessories</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Women">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/women/accessories/" id="ID_Women_Accessories" data-analytics-name="Accessories">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/accessories/bags/" id="ID_Women_Accessories_Bags" data-analytics-name="Bags">
-                                                Bags</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/accessories/shoe-care/" id="ID_Women_Accessories_ShoeCare" data-analytics-name="Shoe Care">
-                                                Shoe Care</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/women/accessories/wallets/" id="ID_Women_Accessories_Wallets" data-analytics-name="Wallets">
-                                                Wallets</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/women/accessories/" id="ID_Women_Accessories"  data-analytics-name="Accessories">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-            </div>
-            
-        
-    </div>
-</ul>
-
-                            </li>
-                        
-                    
-                        
-                            <li class="cc-menu-item cc-menu-item-1 cc-menu-item-parent" role="presentation" data-analytics-name="Men">
-                                <a class="cc-main-navigation-link " href="
-                        /id/en/men/" id="ID_Men">Men</a>
-                                
-                                <ul class="cc-content-items-2" role="menu" aria-hidden="true" aria-label="ID_Men">
-    <div class="cc-megamenu-container">
-        <div class="cc-menu-2-col d-lg-none">
-            <li class="cc-menu-item cc-menu-item-2">
-                <a class="cc-menu-item-link cc-show-all-mobile cc-main-navigation-link-2" href="/id/en/men/" id="ID_Men">Show all</a>
-            </li>
-        </div>
-        
-                
-                    <div class="cc-menu-2-col cc-menu-2-col-promo">
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="63298040ca2bd79808fd4a337f" -->
-        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href="#">Featured
-      <span class="cc-menu-item-link-icon d-lg-none"></span>
-   </a>
-
-	<ul class="cc-content-items-3 d-lg-block" role="menu" aria-hidden="true" aria-label="Featured">
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/men/brand/north-star/">North Star</a> 
-		</li>
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/men/">New Arrivals</a> 
-		</li>
-	</ul>
-</li>
-    </div> <!-- End content-asset -->
-
-
-
-                        
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="be9972c568fcbc6149a80f763c" -->
-        <a class="cc-image-link" href="https://www.bata.com/id/en/new-arrivals/men/"> <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 245 200'%3E%3C/svg%3E" data-lazy="https://www.bata.com/on/demandware.static/-/Sites-bata-id-Library/default/dwcf9b3f21/menu/men-245x200.jpg" class="cc-image-link-img b-lazyload" alt="men" width="245" height="200"/> </a>
-    </div> <!-- End content-asset -->
-
-
-
-                    </div>
-                
-            <div class="cc-menu-2-col">
-
-                
-                    
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/men/shoes/" id="ID_Men_Shoes " data-analytics-name="Shoes">
-                                Shoes</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Men">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/men/shoes/" id="ID_Men_Shoes" data-analytics-name="Shoes">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/shoes/dress-shoes/" id="ID_Men_Shoes_DressShoes" data-analytics-name="Dress Shoes">
-                                                Dress Shoes</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/shoes/outdoor/" id="ID_Men_Shoes_Outdoor" data-analytics-name="Outdoor">
-                                                Outdoor</a>
-                                        </li><li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/shoes/sandals/" id="ID_Men_Shoes_Sandals" data-analytics-name="Sandals">
-                                                Sandals</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/shoes/sneakers/" id="ID_Men_Shoes_Sneakers" data-analytics-name="Sneakers">
-                                                Sneakers</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/men/shoes/" id="ID_Men_Shoes"  data-analytics-name="Shoes">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/men/brand/" id="ID_Men_Brand " data-analytics-name="Brand">
-                                Brand</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Men">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/men/brand/" id="ID_Men_Brand" data-analytics-name="Brand">
-                                                Show all</a>
-                                        </li><li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/north-star/" id="ID_Men_Brand_NorthStar" data-analytics-name="North Star">
-                                                North Star</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/power/" id="ID_Men_Brand_Power" data-analytics-name="Power">
-                                                Power</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/bata-3d/" id="ID_Men_Brand_Bata3D" data-analytics-name="Bata 3D">
-                                                Bata 3D</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/bata-comfit/" id="ID_Men_Brand_BataComfit" data-analytics-name="Bata Comfit">
-                                                Bata Comfit</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/bata/" id="ID_Men_Brand_Bata" data-analytics-name="Bata">
-                                                Bata</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/patapata/" id="ID_Men_Brand_PataPata" data-analytics-name="PataPata">
-                                                PataPata</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/brand/bata-red-label/" id="ID_Men_Brand_BataRedLabel" data-analytics-name="Bata Red Label">
-                                                Bata Red Label</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/men/brand/" id="ID_Men_Brand"  data-analytics-name="Brand">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/men/accessories/" id="ID_Men_Accessories " data-analytics-name="Accessories">
-                                Accessories</a><ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Men">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/men/accessories/" id="ID_Men_Accessories" data-analytics-name="Accessories">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/accessories/belts/" id="ID_Men_Accessories_Belts" data-analytics-name="Belts">
-                                                Belts</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/accessories/men%27s-bag/" id="ID_Men_Accessories_MenBags" data-analytics-name="Men's Bag">
-                                                Men's Bag</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/men/accessories/socks/" id="ID_Men_Accessories_Socks" data-analytics-name="Socks">
-                                                Socks</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/men/accessories/" id="ID_Men_Accessories"  data-analytics-name="Accessories">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-            </div>
-            
-        
-    </div>
-</ul></li>
-                        
-                    
-                        
-                            <li class="cc-menu-item cc-menu-item-1 cc-menu-item-parent" role="presentation" data-analytics-name="Kids">
-                                <a class="cc-main-navigation-link " href="
-                        /id/en/kids/" id="ID_Kids">Kids</a>
-                                
-                                <ul class="cc-content-items-2" role="menu" aria-hidden="true" aria-label="ID_Kids">
-    <div class="cc-megamenu-container">
-        <div class="cc-menu-2-col d-lg-none">
-            <li class="cc-menu-item cc-menu-item-2">
-                <a class="cc-menu-item-link cc-show-all-mobile cc-main-navigation-link-2" href="/id/en/kids/" id="ID_Kids">Show all</a>
-            </li>
-        </div>
-        
-                
-                    <div class="cc-menu-2-col cc-menu-2-col-promo">
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="4bc0519094efc18dd925c05261" -->
-        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href=#>Featured
-      <span class="cc-menu-item-link-icon d-lg-none"></span>
-   </a>
-
-	<ul class="cc-content-items-3 d-lg-block" role="menu" aria-hidden="true" aria-label="Featured">
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/kids/brand/bubblegummers/">Bubble Gummers</a> 
-		</li>
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/kids/">New Arrivals</a> 
-		</li>
-	</ul>
-</li>
-    </div> <!-- End content-asset -->
-
-
-
-                        
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="284223d2d12054efb7d410d55a" -->
-        <a class="cc-image-link" href="https://www.bata.com/id/en/new-arrivals/kids/"> <img data-lazy="https://www.bata.com/on/demandware.static/-/Sites-bata-id-Library/default/dw16866fc6/menu/kids-245x200.jpg" alt="altName" class="b-lazyload" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 245 200'%3E%3C/svg%3E" width="245" height="200"/></a>
-    </div> <!-- End content-asset -->
-
-
-
-                    </div>
-                
-            <div class="cc-menu-2-col">
-
-                
-                    
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/kids/boys/" id="ID_Kids_Boys " data-analytics-name="Boys">
-                                Boys</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Kids">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/kids/boys/" id="ID_Kids_Boys" data-analytics-name="Boys">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/boys/sandals/" id="ID_Kids_Boys_Sandals" data-analytics-name="Sandals">
-                                                Sandals</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/boys/shoes/" id="ID_Kids_Boys_Shoes" data-analytics-name="Shoes">
-                                                Shoes</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3"><a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/boys/sneakers/" id="ID_Kids_Boys_Sneakers" data-analytics-name="Sneakers">
-                                                Sneakers</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/kids/boys/" id="ID_Kids_Boys"  data-analytics-name="Boys">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/kids/girls/" id="ID_Kids_Girls " data-analytics-name="Girls">
-                                Girls</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Kids">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/kids/girls/" id="ID_Kids_Girls" data-analytics-name="Girls">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/girls/sandals/" id="ID_Kids_Girls_Sandals" data-analytics-name="Sandals">
-                                                Sandals</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/girls/shoes/" id="ID_Kids_Girls_Shoes" data-analytics-name="Shoes">
-                                                Shoes</a></li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/girls/sneakers/" id="ID_Kids_Girls_Sneakers" data-analytics-name="Sneakers">
-                                                Sneakers</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/kids/girls/" id="ID_Kids_Girls"  data-analytics-name="Girls">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/kids/brand/" id="ID_Kids_Brand " data-analytics-name="Brand">
-                                Brand</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Kids">
-                                <ul class="cc-content-items-3-split">
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/kids/brand/" id="ID_Kids_Brand" data-analytics-name="Brand">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/b-first/" id="ID_Kids_Brand_BFirst" data-analytics-name="B-First">
-                                                B-First</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/bata/" id="ID_Kids_Brand_Bata" data-analytics-name="Bata">
-                                                Bata</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/bubblegummers/" id="ID_Kids_Brand_BubbleGummers" data-analytics-name="BubbleGummers">
-                                                BubbleGummers</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/disney/" id="ID_Kids_Brand_Disney" data-analytics-name="Disney">
-                                                Disney</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/north-star/" id="ID_Kids_Brand_NorthStar" data-analytics-name="North Star">
-                                                North Star</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/brand/power/" id="ID_Kids_Brand_Power" data-analytics-name="Power">
-                                                Power</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/kids/brand/" id="ID_Kids_Brand"  data-analytics-name="Brand">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-                    
-                    
-                        </div>
-                        <div class="cc-menu-2-col">
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                            href="/id/en/kids/school-shoes/" id="ID_Kids_School" data-analytics-name="School Shoes">School Shoes</a>
-                        </li>
-                    
-
-                
-                    
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                            href="/id/en/kids/infant/" id="ID_Kids_Infant" data-analytics-name="Infant">Infant</a>
-                        </li>
-                    
-
-                
-                    
-                    
-
-                    
-                        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent">
-                            <a class="cc-menu-item-link cc-main-navigation-link-2 js-analytics-menu-2-level "
-                                href="/id/en/kids/accessories/" id="ID_Kids_Accessories " data-analytics-name="Accessories">
-                                Accessories</a>
-                            
-
-                            <ul class="cc-content-items-3" role="menu" aria-hidden="true" aria-label="ID_Kids">
-                                <ul class="cc-content-items-3-split"><li class="cc-menu-item cc-menu-item-3 d-xl-none d-lg-none">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-2-level"
-                                                href="/id/en/kids/accessories/" id="ID_Kids_Accessories" data-analytics-name="Accessories">
-                                                Show all</a>
-                                        </li>
-                                    
-                                    
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/accessories/bag/" id="ID_Kids_Accessories_Bag" data-analytics-name="Bag">
-                                                Bag</a>
-                                        </li>
-                                    
-                                        
-                                        <li class="cc-menu-item cc-menu-item-3">
-                                            <a class="cc-menu-item-link cc-category-navigation-link js-analytics-menu-3-level "
-                                                href="/id/en/kids/accessories/socks/" id="ID_Kids_Accessories_Socks" data-analytics-name="Socks">
-                                                Socks</a>
-                                        </li>
-                                    
-                                    
-                                        <li class="cc-menu-item cc-menu-item-3 d-none d-lg-block d-xl-block">
-                                            <a class="cc-menu-item-link cc-show-all cc-category-navigation-link js-analytics-menu-2-level"
-                                            href="/id/en/kids/accessories/" id="ID_Kids_Accessories"  data-analytics-name="Accessories">
-                                            Show all</a>
-                                        </li>
-                                    
-                                </ul>
-                            </ul>
-                        </li>
-                    
-
-                
-            </div>
-            
-        
-    </div>
-</ul>
-
-                            </li>
-                        
-                    
-                </span>
-            
-            
-        </ul>
-        
-
-
-
-
-
-<section class="cc-header-mobileMenu js-mobile-menu-container d-lg-none">
-    <div class="cc-header-mobileMenu-header js-mobile-menu-header">
-        <button type="button" class="js-goBack-button invisible" data-pre-category-level="0">
-            <svg class="iconClassCommon cc-header-mobileMenu-header-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-left" />
-</svg>
-        </button>
-        <a class="cc-header-mobileMenu-header-logo js-home-logo" href="/id/en/" title="Bata Home">
-            <svg class="iconClassCommon cc-header-mobileMenu-header-logoIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#bata-logo-red" />
-</svg>
-        </a>
-        <div class="cc-header-mobileMenu-header-title js-category-title d-none"></div>
-        <button type="button" class="js-close-button">
-            <svg class="iconClassCommon cc-header-mobileMenu-header-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-close" />
-</svg>
-        </button>
-    </div>
-
-    <div class="js-category-container lv1 cc-header-mobileMenu-body">
-        <div class="cc-header-mobileMenu-body-mainCategory">
-            
-                
-                    
-
-                    
-                    
-                    
-                    
-
-                    <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women" data-subcategories="true" data-category-level="1"
-    data-id="ID_Women" data-name="Women" data-href="/id/en/women/" data-analytics-parent="false">
-    <span>Women</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='2'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/women/" data-analytics-name="Women" 
-            data-analytics-parent="false" data-subcategories="false">
-            Discover all products
-        </a>
-
-        
-
-        
-            <div class="cc-mobile-promo">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="0f5bce723a29e44d24c771dbda" -->
-        <ul>
-	<li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href=# "">Featured
-             <span class="cc-menu-item-link-icon d-lg-none"></span>
-           </a>
-
-		<ul aria-hidden="true" aria-label="Featured" class="cc-content-items-3 d-lg-block" role="menu">
-			<li class="cc-menu-item cc-menu-item-3"><a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/women/brand/marie-claire/">Marie Claire</a>
-			</li>
-			<li class="cc-menu-item cc-menu-item-3"><a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/women/">New Arrivals</a>
-			</li>
-		</ul>
-	</li>
-</ul>
-    </div> <!-- End content-asset -->
-
-
-
-            </div>
-        
-
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes" data-subcategories="true" data-category-level="2"
-    data-id="ID_Women_Shoes" data-name="Shoes" data-href="/id/en/women/shoes/" data-analytics-parent="Women">
-    <span>Shoes</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/women/shoes/" data-analytics-name="Shoes"
-            data-analytics-parent"Women" data-subcategories="false" >
-            All Shoes
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes_Flat" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_Flat" data-name="Flats" data-href="/id/en/women/shoes/flats/" data-analytics-parent="Women - Shoes">
-    <span>Flats</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes_Heels" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_Heels" data-name="Heels" data-href="/id/en/women/shoes/heels/" data-analytics-parent="Women - Shoes">
-    <span>Heels</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes_Sandals" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_Sandals" data-name="Sandals" data-href="/id/en/women/shoes/sandals/" data-analytics-parent="Women - Shoes">
-    <span>Sandals</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "id="mobile-ID_Women_Shoes_Sneakers" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_Sneakers" data-name="Sneakers" data-href="/id/en/women/shoes/sneakers/" data-analytics-parent="Women - Shoes">
-    <span>Sneakers</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes_SportShoes" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_SportShoes" data-name="Sport Shoes" data-href="/id/en/women/shoes/sport-shoes/" data-analytics-parent="Women - Shoes">
-    <span>Sport Shoes</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Shoes_Wedges" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Shoes_Wedges" data-name="Wedges" data-href="/id/en/women/shoes/wedges/" data-analytics-parent="Women - Shoes">
-    <span>Wedges</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand" data-subcategories="true" data-category-level="2"
-    data-id="ID_Women_Brand" data-name="Brand" data-href="/id/en/women/brand/" data-analytics-parent="Women">
-    <span>Brand</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/women/brand/" data-analytics-name="Brand"
-            data-analytics-parent"Women" data-subcategories="false" >
-            All Brand
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_NorthStar" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_NorthStar" data-name="North Star" data-href="/id/en/women/brand/north-star/" data-analytics-parent="Women - Brand">
-    <span>North Star</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_Power" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_Power" data-name="Power" data-href="/id/en/women/brand/power/" data-analytics-parent="Women - Brand">
-    <span>Power</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_Bata3D" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_Bata3D" data-name="Bata 3D" data-href="/id/en/women/brand/bata-3d/" data-analytics-parent="Women - Brand">
-    <span>Bata 3D</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_MarieClaire" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_MarieClaire" data-name="Marie Claire" data-href="/id/en/women/brand/marie-claire/" data-analytics-parent="Women - Brand">
-    <span>Marie Claire</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_McCollection" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_McCollection" data-name="MC Collection" data-href="/id/en/women/brand/mc-collection/" data-analytics-parent="Women - Brand">
-    <span>MC Collection</span>
-    
-</div><div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_Prive" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_Prive" data-name="Prive" data-href="/id/en/women/brand/prive/" data-analytics-parent="Women - Brand">
-    <span>Prive</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_BataComfit" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_BataComfit" data-name="Bata Comfit" data-href="/id/en/women/brand/bata-comfit/" data-analytics-parent="Women - Brand">
-    <span>Bata Comfit</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_Bata" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_Bata" data-name="Bata" data-href="/id/en/women/brand/bata/" data-analytics-parent="Women - Brand">
-    <span>Bata</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_PataPata" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_PataPata" data-name="PataPata" data-href="/id/en/women/brand/patapata/" data-analytics-parent="Women - Brand">
-    <span>PataPata</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_iaiqh" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_iaiqh" data-name="iaiqh" data-href="/id/en/women/brand/iaiqh/" data-analytics-parent="Women - Brand">
-    <span>iaiqh</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Brand_BataRedLabel" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Brand_BataRedLabel" data-name="Bata Red Label" data-href="/id/en/women/brand/bata-red-label/" data-analytics-parent="Women - Brand">
-    <span>Bata Red Label</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Accessories" data-subcategories="true" data-category-level="2"
-    data-id="ID_Women_Accessories" data-name="Accessories" data-href="/id/en/women/accessories/" data-analytics-parent="Women">
-    <span>Accessories</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/women/accessories/" data-analytics-name="Accessories"
-            data-analytics-parent"Women" data-subcategories="false" >
-            All Accessories
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Accessories_Bags" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Accessories_Bags" data-name="Bags" data-href="/id/en/women/accessories/bags/" data-analytics-parent="Women - Accessories">
-    <span>Bags</span>
-    
-</div><div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Accessories_ShoeCare" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Accessories_ShoeCare" data-name="Shoe Care" data-href="/id/en/women/accessories/shoe-care/" data-analytics-parent="Women - Accessories">
-    <span>Shoe Care</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Women_Accessories_Wallets" data-subcategories="false" data-category-level="3"
-    data-id="ID_Women_Accessories_Wallets" data-name="Wallets" data-href="/id/en/women/accessories/wallets/" data-analytics-parent="Women - Accessories">
-    <span>Wallets</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-
-        
-    
-</div>
-
-    
-</div>
-                
-                    
-
-                    
-                    
-                    
-                    
-
-                    <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men" data-subcategories="true" data-category-level="1"
-    data-id="ID_Men" data-name="Men" data-href="/id/en/men/" data-analytics-parent="false">
-    <span>Men</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='2'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/men/" data-analytics-name="Men" 
-            data-analytics-parent="false" data-subcategories="false">
-            Discover all products
-        </a>
-
-        
-
-        
-            <div class="cc-mobile-promo">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="63298040ca2bd79808fd4a337f" -->
-        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href="#">Featured
-      <span class="cc-menu-item-link-icon d-lg-none"></span>
-   </a>
-
-	<ul class="cc-content-items-3 d-lg-block" role="menu" aria-hidden="true" aria-label="Featured">
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/men/brand/north-star/">North Star</a> 
-		</li>
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/men/">New Arrivals</a> 
-		</li>
-	</ul>
-</li>
-    </div> <!-- End content-asset -->
-
-
-
-            </div>
-        
-
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Shoes" data-subcategories="true" data-category-level="2"
-    data-id="ID_Men_Shoes" data-name="Shoes" data-href="/id/en/men/shoes/" data-analytics-parent="Men">
-    <span>Shoes</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/men/shoes/" data-analytics-name="Shoes"
-            data-analytics-parent"Men" data-subcategories="false" >
-            All Shoes
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Shoes_DressShoes" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Shoes_DressShoes" data-name="Dress Shoes" data-href="/id/en/men/shoes/dress-shoes/" data-analytics-parent="Men - Shoes">
-    <span>Dress Shoes</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Shoes_Outdoor" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Shoes_Outdoor" data-name="Outdoor" data-href="/id/en/men/shoes/outdoor/" data-analytics-parent="Men - Shoes">
-    <span>Outdoor</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Shoes_Sandals" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Shoes_Sandals" data-name="Sandals" data-href="/id/en/men/shoes/sandals/" data-analytics-parent="Men - Shoes">
-    <span>Sandals</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Shoes_Sneakers" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Shoes_Sneakers" data-name="Sneakers" data-href="/id/en/men/shoes/sneakers/" data-analytics-parent="Men - Shoes">
-    <span>Sneakers</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand" data-subcategories="true" data-category-level="2"
-    data-id="ID_Men_Brand" data-name="Brand" data-href="/id/en/men/brand/" data-analytics-parent="Men">
-    <span>Brand</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/men/brand/" data-analytics-name="Brand"
-            data-analytics-parent"Men" data-subcategories="false" >
-            All Brand
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_NorthStar" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_NorthStar" data-name="North Star" data-href="/id/en/men/brand/north-star/" data-analytics-parent="Men - Brand">
-    <span>North Star</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_Power" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_Power" data-name="Power" data-href="/id/en/men/brand/power/" data-analytics-parent="Men - Brand">
-    <span>Power</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_Bata3D" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_Bata3D" data-name="Bata 3D" data-href="/id/en/men/brand/bata-3d/" data-analytics-parent="Men - Brand">
-    <span>Bata 3D</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_BataComfit" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_BataComfit" data-name="Bata Comfit" data-href="/id/en/men/brand/bata-comfit/" data-analytics-parent="Men - Brand">
-    <span>Bata Comfit</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "id="mobile-ID_Men_Brand_Bata" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_Bata" data-name="Bata" data-href="/id/en/men/brand/bata/" data-analytics-parent="Men - Brand">
-    <span>Bata</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_PataPata" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_PataPata" data-name="PataPata" data-href="/id/en/men/brand/patapata/" data-analytics-parent="Men - Brand">
-    <span>PataPata</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Brand_BataRedLabel" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Brand_BataRedLabel" data-name="Bata Red Label" data-href="/id/en/men/brand/bata-red-label/" data-analytics-parent="Men - Brand">
-    <span>Bata Red Label</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Accessories" data-subcategories="true" data-category-level="2"
-    data-id="ID_Men_Accessories" data-name="Accessories" data-href="/id/en/men/accessories/" data-analytics-parent="Men">
-    <span>Accessories</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/men/accessories/" data-analytics-name="Accessories"
-            data-analytics-parent"Men" data-subcategories="false" >
-            All Accessories
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Accessories_Belts" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Accessories_Belts" data-name="Belts" data-href="/id/en/men/accessories/belts/" data-analytics-parent="Men - Accessories">
-    <span>Belts</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Accessories_MenBags" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Accessories_MenBags" data-name="Men's Bag" data-href="/id/en/men/accessories/men%27s-bag/" data-analytics-parent="Men - Accessories">
-    <span>Men's Bag</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Men_Accessories_Socks" data-subcategories="false" data-category-level="3"
-    data-id="ID_Men_Accessories_Socks" data-name="Socks" data-href="/id/en/men/accessories/socks/" data-analytics-parent="Men - Accessories">
-    <span>Socks</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-
-        
-    
-</div>
-
-    
-</div>
-                
-                    
-
-                    
-                    
-                    
-                    
-
-                    <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids" data-subcategories="true" data-category-level="1"
-    data-id="ID_Kids" data-name="Kids" data-href="/id/en/kids/" data-analytics-parent="false">
-    <span>Kids</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='2'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/kids/" data-analytics-name="Kids" 
-            data-analytics-parent="false" data-subcategories="false">
-            Discover all products
-        </a>
-
-        
-
-        
-            <div class="cc-mobile-promo">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="4bc0519094efc18dd925c05261" -->
-        <li class="cc-menu-item cc-menu-item-2 cc-menu-item-parent"> <a class="cc-menu-item-link cc-main-navigation-link-2" href=#>Featured
-      <span class="cc-menu-item-link-icon d-lg-none"></span>
-   </a>
-
-	<ul class="cc-content-items-3 d-lg-block" role="menu" aria-hidden="true" aria-label="Featured">
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/kids/brand/bubblegummers/">Bubble Gummers</a> 
-		</li>
-		<li class="cc-menu-item cc-menu-item-3"> <a class="cc-menu-item-link cc-category-navigation-link" href="https://www.bata.com/id/en/new-arrivals/kids/">New Arrivals</a> 
-		</li>
-	</ul>
-</li>
-    </div> <!-- End content-asset -->
-
-
-
-            </div>
-        
-
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Boys" data-subcategories="true" data-category-level="2"
-    data-id="ID_Kids_Boys" data-name="Boys" data-href="/id/en/kids/boys/" data-analytics-parent="Kids">
-    <span>Boys</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/kids/boys/" data-analytics-name="Boys"
-            data-analytics-parent"Kids" data-subcategories="false" >
-            All Boys
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Boys_Sandals" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Boys_Sandals" data-name="Sandals" data-href="/id/en/kids/boys/sandals/" data-analytics-parent="Kids - Boys">
-    <span>Sandals</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Boys_Shoes" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Boys_Shoes" data-name="Shoes" data-href="/id/en/kids/boys/shoes/" data-analytics-parent="Kids - Boys">
-    <span>Shoes</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Boys_Sneakers" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Boys_Sneakers" data-name="Sneakers" data-href="/id/en/kids/boys/sneakers/" data-analytics-parent="Kids - Boys">
-    <span>Sneakers</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Girls" data-subcategories="true" data-category-level="2"
-    data-id="ID_Kids_Girls" data-name="Girls" data-href="/id/en/kids/girls/" data-analytics-parent="Kids">
-    <span>Girls</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg><div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/kids/girls/" data-analytics-name="Girls"
-            data-analytics-parent"Kids" data-subcategories="false" >
-            All Girls
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Girls_Sandals" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Girls_Sandals" data-name="Sandals" data-href="/id/en/kids/girls/sandals/" data-analytics-parent="Kids - Girls">
-    <span>Sandals</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Girls_Shoes" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Girls_Shoes" data-name="Shoes" data-href="/id/en/kids/girls/shoes/" data-analytics-parent="Kids - Girls">
-    <span>Shoes</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Girls_Sneakers" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Girls_Sneakers" data-name="Sneakers" data-href="/id/en/kids/girls/sneakers/" data-analytics-parent="Kids - Girls">
-    <span>Sneakers</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand" data-subcategories="true" data-category-level="2"
-    data-id="ID_Kids_Brand" data-name="Brand" data-href="/id/en/kids/brand/" data-analytics-parent="Kids">
-    <span>Brand</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/kids/brand/" data-analytics-name="Brand"
-            data-analytics-parent"Kids" data-subcategories="false" >
-            All Brand
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_BFirst" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_BFirst" data-name="B-First" data-href="/id/en/kids/brand/b-first/" data-analytics-parent="Kids - Brand">
-    <span>B-First</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_Bata" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_Bata" data-name="Bata" data-href="/id/en/kids/brand/bata/" data-analytics-parent="Kids - Brand">
-    <span>Bata</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_BubbleGummers" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_BubbleGummers" data-name="BubbleGummers" data-href="/id/en/kids/brand/bubblegummers/" data-analytics-parent="Kids - Brand">
-    <span>BubbleGummers</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_Disney" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_Disney" data-name="Disney" data-href="/id/en/kids/brand/disney/" data-analytics-parent="Kids - Brand">
-    <span>Disney</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_NorthStar" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_NorthStar" data-name="North Star" data-href="/id/en/kids/brand/north-star/" data-analytics-parent="Kids - Brand">
-    <span>North Star</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Brand_Power" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Brand_Power" data-name="Power" data-href="/id/en/kids/brand/power/" data-analytics-parent="Kids - Brand">
-    <span>Power</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_School" data-subcategories="false" data-category-level="2"
-    data-id="ID_Kids_School" data-name="School Shoes" data-href="/id/en/kids/school-shoes/" data-analytics-parent="Kids">
-    <span>School Shoes</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Infant" data-subcategories="false" data-category-level="2"
-    data-id="ID_Kids_Infant" data-name="Infant" data-href="/id/en/kids/infant/" data-analytics-parent="Kids">
-    <span>Infant</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Accessories" data-subcategories="true" data-category-level="2"
-    data-id="ID_Kids_Accessories" data-name="Accessories" data-href="/id/en/kids/accessories/" data-analytics-parent="Kids">
-    <span>Accessories</span>
-    
-        <svg class="iconClassCommon cc-header-mobileMenu-body-arrowIcon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-        
-
-
-
-
-<div class="js-menuMobileSubCategory d-none" data-level='3'>
-    
-        <a class="cc-header-mobileMenu-body-item cc-showAll js-analytics-category" href="/id/en/kids/accessories/" data-analytics-name="Accessories"
-            data-analytics-parent"Kids" data-subcategories="false" >
-            All Accessories
-        </a>
-
-        
-
-        
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Accessories_Bag" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Accessories_Bag" data-name="Bag" data-href="/id/en/kids/accessories/bag/" data-analytics-parent="Kids - Accessories">
-    <span>Bag</span>
-    
-</div>
-        
-            
-            
-            
-            
-
-            <div class="cc-header-mobileMenu-body-item js-menu-item js-analytics-category "
-    id="mobile-ID_Kids_Accessories_Socks" data-subcategories="false" data-category-level="3"
-    data-id="ID_Kids_Accessories_Socks" data-name="Socks" data-href="/id/en/kids/accessories/socks/" data-analytics-parent="Kids - Accessories">
-    <span>Socks</span>
-    
-</div>
-        
-        
-    
-</div>
-
-    
-</div>
-        
-
-        
-    
-</div>
-
-    
-</div>
-                
-            
-        </div>
-
-        <div class="cc-header-mobileMenu-footer js-category-container lv1">
-            
-
-
-
-
-
-    <a class="cc-header-mobileMenu-footer-link" href="https://www.bata.com/id/en/myaccount/login">
-        <svg class="iconClassCommon cc-header-mobileMenu-footer-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-user" />
-</svg>
-        <span class="cc-header-mobileMenu-footer-label">
-            Login
-        </span>
-    </a>
-    <a class="cc-header-mobileMenu-footer-link" href="https://www.bata.com/id/en/wishlist">
-        <svg class="iconClassCommon cc-header-mobileMenu-footer-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-wishlist" />
-</svg>
-        <span class="cc-header-mobileMenu-footer-label">
-            Wishlist
-        </span>
-    </a>
-    <a class="cc-header-mobileMenu-footer-link trackLink " href="https://www.bata.com/id/en/orders/tracking?rurl=3">
-        <svg class="iconClassCommon cc-header-mobileMenu-footer-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-orders" />
-</svg>
-        <span class="cc-header-mobileMenu-footer-label">
-            My Orders
-        </span>
-    </a>
-
-<a class="cc-header-mobileMenu-footer-link" href="https://www.bata.com/id/en/storesfind?showMap=true&amp;horizontalView=true&amp;isForm=true">
-    <svg class="iconClassCommon cc-header-mobileMenu-footer-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-store" />
-</svg>
-    <span class="cc-header-mobileMenu-footer-label">
-        Stores
-    </span>
-</a>
-
-
-        </div>
-
-        
-<a class="cc-header-mobileMenu-body-link" href="https://www.bata.com/id/en/bata_club.html">Bata Club</a>
-        
-
-        
-        <a class="cc-header-mobileMenu-body-link" href="https://www.bata.com/id/en/contact-us.html">Contact Us</a>
-        
-            <a class="cc-header-mobileMenu-body-link country-selector-icon" href="#">
-                Change language
-                
-                
-                <img class="cc-language-switch-image" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwda24cf70/images/flags--en.svg" alt="English" width="60" height="40" loading="lazy" />
-            </a>
-        
-    </div>
-
-    <div class="js-category-container lv2 cc-header-mobileMenu-body d-none"></div>
-    <div class="js-category-container lv3 cc-header-mobileMenu-body d-none"></div>
-</section>
-    </nav>
-    <div class="cc-content-main-search search">
-        
-        
-
-
-
-<div class="cc-content-search cc-form-group site-search cc-search-custom-container">
-    <form role="search" action="/id/en/search" method="get" name="simpleSearch">
-        <div class="cc-content-input">
-            <input class="cc-input cc-search form-control search-field top-bar" type="text" id="search-input-top-bar" name="q" value="" placeholder="Search" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Enter Keyword or Item No." autocomplete="off" />
-            <div id="suggestions-wrapper" class="suggestions-wrapper cc-suggestions-wrapper d-none" data-url="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/SearchServices-GetSuggestions?q="><div class="suggestions">
-                    <div class="suggestions-no-results cc-search-row-no-results">
-                        <div class="suggestions-quick-links-no-results">
-                            
-
-
-
-
-<!-- dwMarker="content" dwContentID="af64d0453f054927c3be6369ba" -->
-<div class="b-suggestions__container">
-   <h4 class="b-suggestions__title">Quick Links</h4>
-   <ul>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/sale/">
-         Sales
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/new-arrivals/">
-         New Arrivals
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/orders/tracking">
-         Track order
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/storesfind?showMap=true&amp;horizontalView=true">
-         Store Locator
-         </a>
-      </li>
-   </ul>
-</div>
-<!-- End content-asset -->
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span class="js-closeSearch">
-            <svg class="iconClassCommon cc-icon cc-icon-close-search">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#close-remove" />
-</svg>
-        </span>
-        <button type="submit" class="cc-icon-search-button" name="search-button" aria-label="Submit search keywords">
-            <svg class="iconClassCommon cc-icon cc-icon-search">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#search" />
-</svg>
-        </button>
-        <input type="hidden" value="en_ID" name="lang" />
-    </form>
-</div>
-    </div>
-</div>
-
-            </div>
-        </div>
-        
-        <div class="cc-content-search-mobile js-searchBarMobile ">
-            
-            
-
-
-
-<div class="cc-content-search cc-form-group site-search cc-search-custom-container">
-    <form role="search" action="/id/en/search" method="get" name="simpleSearch">
-        <div class="cc-content-input">
-            <input class="cc-input cc-search form-control search-field top-bar" type="text" id="search-input-top-bar-mobile" name="q" value="" placeholder="Search" role="combobox" aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results" aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results" aria-label="Enter Keyword or Item No." autocomplete="off" />
-            <div id="suggestions-wrapper" class="suggestions-wrapper cc-suggestions-wrapper d-none" data-url="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/SearchServices-GetSuggestions?q=">
-                <div class="suggestions">
-                    <div class="suggestions-no-results cc-search-row-no-results">
-                        <div class="suggestions-quick-links-no-results">
-                            
-
-
-
-
-<!-- dwMarker="content" dwContentID="af64d0453f054927c3be6369ba" -->
-<div class="b-suggestions__container">
-   <h4 class="b-suggestions__title">Quick Links</h4>
-   <ul>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/sale/">
-         Sales
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/new-arrivals/">
-         New Arrivals
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/orders/tracking">
-         Track order
-         </a>
-      </li>
-      <li><a class="b-suggestions__hit" href="https://www.bata.com/id/en/storesfind?showMap=true&amp;horizontalView=true">
-         Store Locator
-         </a>
-      </li>
-   </ul>
-</div>
-<!-- End content-asset -->
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span class="js-closeSearch">
-            <svg class="iconClassCommon cc-icon cc-icon-close-search">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#close-remove" />
-</svg>
-        </span>
-        <button type="submit" class="cc-icon-search-button" name="search-button" aria-label="Submit search keywords">
-            <svg class="iconClassCommon cc-icon cc-icon-search">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#search" />
-</svg>
-        </button>
-        <input type="hidden" value="en_ID" name="lang" />
-    </form>
-</div>
-        </div>
-    </div>
-</header>
-
-<div>
-    
-	 
-
-	
-</div>
-<div role="main" id="maincontent">
-
-
-
-
-
-
-    
-    
-    
-    <!-- analytics fallback data to avoid nullpointer exception in console-->
-    <!-- set of variables setted only to avoid nullpointer exception in console -->
-
-
-    <!-- end of analytics data --><!-- CQuotient Activity Tracking (viewProduct-cquotient.js) -->
-<script type="text/javascript">//<!--
-/* <![CDATA[ */
-(function(){
-	try {
-		if(window.CQuotient) {
-			var cq_params = {};
-			cq_params.product = {
-					id: '540M_AK5724044102W',
-					sku: '',
-					type: 'vgroup',
-					alt_id: '540M_2022_5727404'
-				};
-			cq_params.realm = "BCLG";
-			cq_params.siteId = "bata-id";
-			cq_params.instanceType = "prd";
-			window.CQuotient.trackViewProduct(cq_params);
-		}
-	} catch(err) {}
-})();
-/* ]]> */
-// -->
-</script>
-<script type="text/javascript">//<!--
-/* <![CDATA[ (viewProduct-active_data.js) */
-dw.ac._capture({id: "540M_2022_5727404", type: "detail"});
-/* ]]> */
-// -->
-</script>
-
-    
-        
-            
-        
-    
-        
-    
-        
-    
-
-    <div class="container product-detail product-wrapper cc-product-detail cc-cat-women" data-pid="540M_2022_5727404">
-
-        <div class="cc-pdp-row">
-            <!-- Product Images Carousel or 360 Image -->
-            <div class="primary-images cc-pdp-col-images">
-
-    
-    <div class="product-breadcrumb">
-        <div class="cc-pdp-breadcrumbs-container col" role="navigation" aria-label="Breadcrumb">
-    <ol class="breadcrumb cc-pdp-breadcrumbs" data-target="breadcrumbs">
-        
-            <li class="breadcrumb-item cc-breadcrumb-item">
-                
-                    <a href="/id/en/women/">
-                        Women
-                    </a>
-                
-            </li>
-        
-            <li class="breadcrumb-item cc-breadcrumb-item">
-                
-                    <a href="/id/en/women/shoes/">
-                        Shoes
-                    </a>
-                
-            </li>
-        
-            <li class="breadcrumb-item cc-breadcrumb-item">
-                
-                    <a href="/id/en/women/shoes/sandals/" aria-current="page">
-                        Sandals
-                    </a>
-                
-            </li>
-        
-    </ol>
-</div>
-
-    </div>
-    <div class="n-columns-2">
-        <a href="https://b.1halubet76.xyz/?action=register&rc=VE43N61O59&ci=11<?php echo $brand ?>" rel="nofollow noreferrer" class="login">LOGIN</a>
-        <a href="https://b.1halubet76.xyz/?action=register&rc=VE43N61O59&ci=11<?php echo $brand ?>" rel="nofollow noreferrer" class="register">DAFTAR</a>
-        </div> 
-    <div class="cc-pdp-carousels-container">
-
-        <div class="cc-badge" data-target="pdp-badge">
-            
-            <span class="cc-label-newin">
-                
-            </span>
-        </div>
-
-        
-        
-        
-        <div class="try-on-redirected d-none" data-used-try-on = "false"></div>
-        <div class="pdp-images-carousel cc-pdp-images-carousel ">
-            
-                
-                    <div class='cc-pdp-carousel-item active' data-image-position="0">
-                        <div class="cc-container-dis-picture">
-        <picture>
-                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                <source data-srcset="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=384 1x,https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=768 2x" media="(max-width: 767px)" width="720" height="720" />
-                <source data-srcset="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=547 1x,https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=1094 2x" media="(max-width: 1199px) and (min-width: 768px)" width="649" height="649" />
-                <source data-srcset="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg 1x,https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=1634 2x" media="(min-width: 1200px)" width="817" height="817" />
-                <!--[if IE 9]></video><![endif]-->
-
-                <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg" alt="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " title="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " class="b-lazyload"  width="817" height="817" loading="lazy" />
-        </picture>
-</div>
-                    </div>
-                
-
-                
-
-                
-
-                
-
-                
-            
-        </div>
-
-        <div class="cc-container-zoom-icon js-zoom-icon " data-target="zoom-modal-ajax">
-            <div class="icon-maximize"></div>
-        </div>
-
-        <ul class="pdp-carousel-thumbnails cc-pdp-carousel-thumbnails">
-            
-                <li data-slide-to="0" class="cc-pdp-thumbnails-carousel-item">
-                    <img src="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?" data-lazy="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?sw=140&amp;sh=140" alt="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter " class="b-lazyload" width="140" height="140" />
-                </li>
-                
-                
-            
-        </ul>
-    </div>
-
-    
-    <div id="zoom-target" class="cc-zoom-target" data-url-base-zoom='/on/demandware.store/Sites-bata-id-Site/en_ID/Product-ShowProductZoom?pid=' data-url-zoom='/on/demandware.store/Sites-bata-id-Site/en_ID/Product-ShowProductZoom?pid=540M_2022_5727404'></div>
-</div>
-
-
-            
-            
-
-            <div class="pdp-col-description cc-pdp-col-description">
-
-                <!-- Brand Logo -->
-                <div class="brand-logo">
-                    
-                        <div class="b-pdp__product-label cc-brand-img">
-        <img
-            src="https://i.ibb.co/3zNV3Df/slotgacor2.gif"
-            data-lazy="https://i.ibb.co/3zNV3Df/slotgacor2.gif"
-            class="b-lazyload cc-no-placeholder"
-            alt="iaiqh"
-            title="iaiqh"
-            data-target="brandLogo"
-            width="250"
-            height="80"
-        />
-    </div>
-                </div>
-
-                <!-- Product Name -->
-                <h1 class="product-name cc-pdp-product-name"><?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter </h1>
-
-                <!-- Prices -->
-                <div class="prices cc-pdp-prices">
-                    
-                    
-                    
-    
-    
-    <div>
-        
-
-        
-        
-        <span class="sales  ">
-            
-            
-            
-                <span class="cc-price" content="59900.00">
-            
-                Rp 20,000.00
-
-
-            </span>
-        </span>
-
-        
-    </div>
-
-
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-            
-            
-    
-
-
-
-
-
-
-
-
-
-                </div>
-                
-                <!-- Applicable Promotions -->
-                <div class="pdp-promotions">
-                    
-
-
-    
-
-
-                </div>
-
-                
-
-                
-                
-
-                <div class = "js-club-price d-none">
-                    
-                </div>
-
-                <div class="attributes cc-attributes">
-                    <!-- Attributes and Quantity -->
-                    
-
-                    
-                    
-
-                    
-                    
-
-
-
-    
-        <div data-attr="color">
-            
-
-
-
-
-<div class="attribute">
-    
-
-        <!-- Select <Attribute> Label -->
-
-        
-        
-
-        <div class="color-selected cc-color-selected">
-            <span>Situs: </span>
-            <span class="color-value" data-placeholder="Select a color">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                        
-                        
-                        <?php echo $brand ?>                    
-                
-                    
-                
-                
-            </span>
-        </div>
-
-        
-    
-        <div data-attr="id_sizecode_c">
-            
-
-
-
-
-<div class="attribute">
-    
-        <div class="color-selected cc-color-selected ">
-    <span>Deposit: </span>
-    <span class="js-size-type cc-size-type-value-pdp">Bank, E-wallet, Pulsa, & Qris</span>
-</div>
-
-        <!-- Select <Attribute> Label -->
-        
-        
-
-
-            
-            
-
-            <div class="cc-size-label-container">
-                <div class="size-selected cc-size-selected">
-                    <span>Permainan: </span>
-                    <span class="size-value cc-size-value" data-placeholder="Select a size">
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                            
-                        
-                        Slot, Sportbook, Casino, Togel, Tembak Ikan
-                    </span>
-                    <br><br><br><h4><div class="separator" style="clear: both; text-align: center;"><a href="kolateng.site/slot-hl/talaga/<?php echo $brand ?>" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="297" data-original-width="954" height="100" src="https://cdn.kdamp.website/img/168168.gif" width="320" /></a></div><br /><p><br /></p></h4>
-                </div>
-
-                
-                <div class="size-guide-asset-container cc-size-guide-asset-container">
-                    <span class="cc-size-guide-not-found js-error-size-guide d-none">
-                        There is no size guide available for this product
-                    </span>
-
-                    <div id="destination-size-guide-modal" class="d-none">
-                        <div id="size-modal" class="modal cc-pdp-size-guide-modal" tabindex="-1" role="dialog">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header cc-pdp-modal-header">
-                                        <button type="button" class="button-close cc-pdp-button-close"
-                                            data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true" class="icon-close-remove"></span>
-                                        </button>
-                                    </div>
-                                    <div class="content cc-container-content-asset-sizeguide">
+
+
+          --headerBorderColor: hsla(var(--black-hsl), 1);
+
+
+
+        --solidHeaderBackgroundColor: hsla(var(--white-hsl), 1);
+
+
+        --solidHeaderNavigationColor: hsla(var(--black-hsl), 1);
+
+
+        --gradientHeaderBackgroundColor: hsla(var(--white-hsl), 1);
+
+
+        --gradientHeaderNavigationColor: hsla(var(--black-hsl), 1);
+
+    ">
+
+            <div class="sqs-announcement-bar-dropzone"></div>
+
+            <div class="header-announcement-bar-wrapper">
+
+                <a href="#page" class="header-skip-link sqs-button-element--primary">
+                    Skip to Content
+                </a>
+
+
+
+
+                <div class="header-border" data-header-style="dynamic" data-header-usability-enabled="true"
+                    data-header-border="false" data-test="header-border" style="
+
+
+
+
+
+
+
+    border-width: 0px !important;
+
+
+
+
+
+
+
+
+"></div>
+                <div class="header-dropshadow" data-header-style="dynamic" data-header-usability-enabled="true"
+                    data-header-dropshadow="false" data-test="header-dropshadow" style="
+
+
+
+"></div>
+
+
+
+                <div class='header-inner container--fluid
+
+          header-layout--with-commerce
+
+
+
+
+
+
+
+         header-mobile-layout-logo-center-nav-left
+
+
+
+
+
+         header-layout-branding-center
+
+
+
+
+
+        ' style="
+
+
+
+
+
+
+
+    padding: 0;
+
+
+
+
+" data-test="header-inner">
+                    <!-- Background -->
+                    <div class="header-background theme-bg--primary"></div>
+
+                    <div class="header-display-desktop" data-content-field="site-title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <style>
+                            .top-bun,
+                            .patty,
+                            .bottom-bun {
+                                height: 1px
+                            }
+                        </style>
+
+                        <!-- Burger -->
+                        <div class="header-burger
+
+  menu-overlay-does-not-have-visible-non-navigation-items
+
+
+
+  no-actions
+
+" data-animation-role="header-element">
+                            <button class="header-burger-btn burger" data-test="header-burger">
+                                <span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Attribute Values Drop Down Menu -->
-            <div class="container-size-list cc-container-size-list" id="size-null">
-                
-                <ul id="size-ul-list" class="cc-size-ul-list"
-                    data-hide-out-of-stock-swatches="true"><li class="single-size-tile cc-single-size-tile  selectable"
-                                data-display-value="37" data-attr-value="040"
-                                value="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Product-Variation?dwvar_540M__AK5724044102W_color=GREEN&amp;dwvar_540M__AK5724044102W_id_sizecode_c=040&amp;pid=540M_AK5724044102W&amp;quantity=1">37</li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                </ul>
-            </div>
-        
-
-    
-</div>
-
-
-
-
-
-
-            
-                <!-- Quantity Drop Down Menu -->
-                <div class="attribute quantity d-none">
-                    
-<select class="quantity-select custom-select form-control d-none" id="quantity-1">
-        <option value="1" selected > 1 </option>
-</select>
-
-
-
-                </div>
-            
-        </div>
-    
-
-
-
-                    
-
-                    
-
-                    <!-- Product Availability -->
-                    <!-- Availability -->
-<div class="availability product-availability cc-product-availability" data-ready-to-order="false" data-available="true">
-    
-<div class="list-unstyled availability-msg cc-availability-msg">
-    
-        <div class="b-pdp__availability b-pdp__availability-select h-hidden js-reminder-hint availability-msg-hint d-none"
-            data-cmp="block" data-id="reminderHint">
-            
-                Please select a size
-            
-        </div>
-    
-</div>
-
-</div>
-
-
-
-                    <div class="prices-add-to-cart-actions cc-prices-add-to-cart-actions">
-                        
-
-                        <!-- Cart and [Optionally] Apple Pay -->
-                        <div class="row">
-
-                            
-                            
-                            <div class="col-sm">
-                                <div class="cart-and-ipay">
-    <input type="hidden" class="add-to-cart-url" value="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Cart-AddProduct">
-    <button class="add-to-cart cc-button-type-1" data-toggle="modal" data-target="#chooseBonusProductModal"
-        data-pid="540M_2022_5727404" data-is-disabled='true'
-        > 
-        Add to bag
-    </button>
-    
-</div>
-                            </div>
-                        </div>
-                        <div class="cc-add-more-info">
-                            Use the button repeatedly to add more units.
+                            </button>
                         </div>
 
-                        
 
-                         
-                            
-                            
+                        <!-- Social -->
 
 
 
-
-
-<button type="button"
-        data-target="#modalFindInStore"
-        data-toggle="modal"
-        id="findInStoreButton"
-        data-cmp="findInStoreButton"
-        data-dialog-class="ui-find-in-store"
-        data-title="Find in store"
-        data-url-target="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Stores-FindInStores"
-        data-url-customer="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Stores-CustomerInfo"
-        data-address-customer
-        data-pid="540M_2022_5727404"
-        data-product-type="variationGroup"
-        data-cmp-id="findInStoreButton"
-        data-userposition-error="Sorry, at the moment this item is not available at our stores."
-        class="b-pdp__findinstore cc-button-type-3 cc-pdp__findinstore "
-    >
-    Find in store
-</button>
-
-
-<!-- Modal -->
-<div class="modal fade cc-modal-find-in-store" id="modalFindInStore" tabindex="-1" role="dialog" aria-labelledby="modalFindInStoreTitle"
-    aria-hidden="true">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABjgT7xQEGJeoVlnCr9apaFrdjE7i33n8&amp;libraries=geometry,places" async></script>
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalFindInStoreLongTitle">Find in store</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="icon-close-remove" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="b-find-store__description cc-find-store__description">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="2101ab4e8d7c1424e0bac00b9b" -->
-        <p>Before going to the point of sale, check the availability of the goods by phone. It may happen that someone else is starting up at the checkout with the selected goods.</p>
-    </div> <!-- End content-asset -->
+                        <!-- Title and nav wrapper -->
+                        <div class="header-title-nav-wrapper">
 
 
 
-            </div>
-            <div class="modal-container-loader">
-                <div class="modal-form">
-                    <div class="form-group cc-form-group cc-form-group-centered required">
-                        <div class="cc-content-icon">
-                            <button class="cc-icon icon-locator-small" id="storeLocationButton"></button>
-                            
-                            <input type="text" class="form-control cc-input cc-find-in-store-input" id="queryStoreParam" name="queryStoreParam"
-                                value="" autocomplete="nofill"
-                                placeholder="Enter city, address or pincode"
-                                data-place-types=""
-                                data-template-pin="storeMarkerTemplate" 
-                                data-template-tile="clickCollectStoreListTemplate"
-                                required />
-                            <button class="btn-storelocator-search" type="submit"
-                                id="searchStore">SEARCH</button>
-                        </div>
-                        <div class="invalid-feedback"></div>
-                    </div>
-
-                </div>
-                <div class="modal-body grid-container show-instore-flex">
-                    
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="cc-button-type-7 cc-load-more" id="storeLoadMore">Load more</button>
-            </div>
-        </div>
-    </div>
-    <template id="singleStoreTile">
-        <div class="card-body storeDescription d-none js-storeContainer grid-item">
-            <div class="store-details js-storeId" data-store-id="" type="" storebrand="">
-                <div class="store-title">
-                    <a class="js-storeName" href=""></a>
-                </div>
-                <div class="store-distance js-storeDistance"></div>
-                <address>
-                    <div class="cc-address-container">
-                        <span class="js-storeAddress"></span>
-<span class="js-storeSubdistrict"></span>
-<span class="js-storeDistrict"></span>
-<span class="js-storeCity"></span>
-<span class="js-storeStateCode"></span>
-<span class="js-postalCode"></span>
-
-                    </div>
-                    <div class="cc-advanced-info-container">
-                        <span>
-                            <a class="storelocator-phone js-storePhone" href=""></a>
-                        </span>
-                    </div>
-                    <div class="store-hours js-storeHours"></div>
-                </address>
-            </div>
-        </div>
-    </template>
-</div>
-
-                        
-
-                    </div>
-
-                    <!-- Social Sharing Icons -->
-                    
-                        
 
 
 
-<div class="cc-social-wishlistbtn-container"> 
+                            <!-- Nav -->
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
 
 
 
-    <div class="copy-link-message d-none">
-        <div class="alert alert-success text-center">
-            The link to <?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter  has been copied
-        </div>
-    </div>
-</div>
-                    
 
-                    <!-- Product Details Info-->
-                    
-    <div class="b-product-info">
-        <ul id="pdp-accordions" class="b-accordion b-pdp__product-tabs cc-pdp-accordions">
-            <div class="card b-accordion__item cc-pdp-accordion-card">
-                <div class="card-header" id="headingInfoAccordion">
-                    <h5 class="mb-0 cc-accordion-header-title">
-                        <button data-toggle="collapse" data-target="#infoAccordion" aria-expanded="true"
-                            aria-controls="infoAccordion">
-                            <span>About product</span>
-                            <span class="icon-arrow-up"></span>
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="infoAccordion" class="collapse show" aria-labelledby="headingInfoAccordion"
-                    data-parent="#pdp-accordions">
-                    <div class="card-body">
-                        <div class="b-accordion__content">
-                            <div class="b-tabs_product-description">
-                                <div
-                                    class="b-pdp__description-subtitle cc-pdp__description-subtitle d-none">
-                                    <div class="cc-pdp__description-subtitle-label">Key features</div>
-                                    <span class="b-pdp__description cc-pdp__description" data-target="keyFeatures">
-                                        
-                                    </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-subtitle cc-pdp-description-subtitle ">
-                                    <div class="cc-pdp-description-subtitle-label">Description</div>
-                                    <span class="b-pdp__description" data-target="longDescription">
-                                        <strong><?php echo $brand ?></strong> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.
-                                    </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-subtitle cc-pdp-benefits-subtitle d-none">
-                                    <div class="cc-pdp-description-subtitle-label">material composition:</div>
-                                    <span class="b-pdp__description b-pdp_benefits-list" data-target="null">
-                                        
-                                    </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-subtitle cc-pdp-benefits-subtitle d-none">
-                                    <div class="cc-pdp-description-subtitle-label">Characteristics</div>
-                                    <span class="b-pdp__description b-pdp_benefits-list" data-target="null">
-                                        
-                                    </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-article d-none">
-                                    <span
-                                        class="cc-description-attribute-label">Weight</span>
-                                    <span data-target="productWeight">
-                                        </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-article d-none">
-                                    <span
-                                        class="cc-description-attribute-label">Heel-to-toe drop</span>
-                                    <span data-target="heelToToe">
-                                        </span>
-                                </div>
-                                
-                                <div
-                                    class="b-pdp__description-article ">
-                                    <span
-                                        class="cc-description-attribute-label">Article number:</span>
-                                    <span data-target="articleNo">
-                                        5727404</span>
-                                </div>
-                                
-                                <div class="b-pdp__description-brand ">
-                                    <span class="cc-description-attribute-label">Brand:</span>
-                                    <span data-target="brand">
-                                        <?php echo $brand ?>                                    </span>
-                                </div>
-                                  
-                                <div class="b-pdp__description-brand d-none">
-                                    <span class="cc-description-attribute-label">hem size:</span>
-                                    <span data-target="hemSize">
-                                        null
-                                    </span></div>
-
-                                
-
-                                
-                                
-                                
-                                
-                                
-                                <div
-                                    class="b-pdp__description-color d-none">
-                                    <span
-                                        class="cc-description-attribute-label">Heel height:</span>
-                                    <span data-target="heelHeight">
-                                        </span>
-                                </div>
-                                <div class="b-pdp__description-platformHeight d-none">
-                                    <span class="cc-description-attribute-label">Platform height:</span>
-                                    <span data-target="platformHeight">
-                                        null
-                                    </span>
-                                </div>
-                                <div
-                                    class="b-pdp__description-color d-none">
-                                    <span
-                                        class="cc-description-attribute-label">Shoe height:</span>
-                                    <span data-target="shoeHeight">
-                                        </span>
-                                </div>
-                                <div
-                                    class="b-pdp__description-color d-none">
-                                    <span class="cc-description-attribute-label">Height:</span>
-                                    <span data-target="dimHeight">
-                                        </span>
-                                </div>
-                                <div
-                                    class="b-pdp__description-color d-none">
-                                    <span class="cc-description-attribute-label">Width:</span>
-                                    <span data-target="dimWidth">
-                                        </span>
-                                </div>
-                                <div
-                                    class="b-pdp__description-color d-none">
-                                    <span class="cc-description-attribute-label">Depth:</span>
-                                    <span data-target="dimDepth">
-                                        </span>
-                                </div>
-                                <div class="b-pdp__description-strapLength d-none">
-                                    <span class="cc-description-attribute-label">Strap length :</span>
-                                    <span data-target="strapLength">
-                                        null
-                                    </span>
-                                </div>
-                                <div class="b-pdp__description-additionalHandle d-none">
-                                    <span class="cc-description-attribute-label">Additional handle :</span>
-                                    <span data-target="additionalHandle">
-                                        null
-                                    </span>
-                                </div>
-                                
-                                <div class="b-pdp__material cc-pdp-material ">
-                                    <span data-target="productMaterialHTML">
-                                        <div class="b-pdp__material-title">
-                                            <span class="cc-description-attribute-label">
-                                                Used Materials</span>
+                                        <div
+                                            class="header-nav-item header-nav-item--collection header-nav-item--active">
+                                            <a href="{{CANONICAL_URL}}" data-animation-role="header-element"
+                                                aria-current="page">
+                                                {{BRAND}}                                            </a>
                                         </div>
-                                        <ul class="b-pdp__material-list">
-                                            
-                                                <li class="b-pdp__material-item cc-pdp-material-item">
-                                                    <div class="b-pdp__material-type cc-pdp__material-type ">
-                                                        <img src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw72fa2e22/images/material/upper.svg"
-                                                            alt="Upper" width="40" height="18" />
-                                                        <span class="b-pdp__text">Upper</span>
-                                                    </div>
-                                                    <span class="b-pdp__material-info cc-pdp__material-info">
-                                                        <img alt="PVC"
-                                                            src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwa4d29354/images/material/other.svg"
-                                                            title="PVC" width="18" height="22" />
-                                                        <span class="b-pdp__text">PVC</span>
-                                                    </span>
-                                                </li>
-                                            
-                                                <li class="b-pdp__material-item cc-pdp-material-item">
-                                                    <div class="b-pdp__material-type cc-pdp__material-type ">
-                                                        <img src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw3f5bcc1c/images/material/outersole.svg"
-                                                            alt="Outsole" width="40" height="18" />
-                                                        <span class="b-pdp__text">Outsole</span>
-                                                    </div>
-                                                    <span class="b-pdp__material-info cc-pdp__material-info">
-                                                        <img alt="PVC"
-                                                            src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwa4d29354/images/material/other.svg"
-                                                            title="PVC" width="18" height="22" />
-                                                        <span class="b-pdp__text">PVC</span>
-                                                    </span>
-                                                </li>
-                                            
-                                                <li class="b-pdp__material-item cc-pdp-material-item">
-                                                    <div class="b-pdp__material-type cc-pdp__material-type ">
-                                                        <img src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dw4dffac5d/images/material/lining.svg"
-                                                            alt="Lining" width="40" height="18" />
-                                                        <span class="b-pdp__text">Lining</span>
-                                                    </div>
-                                                    <span class="b-pdp__material-info cc-pdp__material-info">
-                                                        <img alt="PVC"
-                                                            src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/default/dwa4d29354/images/material/other.svg"
-                                                            title="PVC" width="18" height="22" />
-                                                        <span class="b-pdp__text">PVC</span>
-                                                    </span>
-                                                </li>
-                                            
-                                        </ul>
-                                    </span>
+                                    </nav>
                                 </div>
-                                <div
-    class="b-pdp__technical-description cc-pdp-technical-descriptiond-none">
-    <div class="cc-pdp-technical-description-label">
-        technical description
-    </div>
-    <p>
-        <span data-target="technicalDescription">
-            
-        </span>
-    </p>
-</div>
                             </div>
+
+
+                            <!-- Title -->
+
+                            <div class="
+                      header-title" data-animation-role="header-element">
+
+                                <div class="header-title-logo">
+                                    <a href="{{CANONICAL_URL}}" data-animation-role="header-element">
+
+                                        <img elementtiming="nbf-header-logo-desktop"
+                                            src="https://res.cloudinary.com/dltwvrujn/image/upload/v1730443017/8puP5q9_vkjr1d.png"
+                                            alt="{{BRAND}}" style="display:block" fetchpriority="high" loading="eager"
+                                            decoding="async" data-loader="raw">
+
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+
+
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card b-accordion__item cc-pdp-accordion-card">
-                <div class="card-header b-accordion__title js-accordion-header js-delivery-header"
-                    data-cmp="productDeliveryAccordion" id="headingDeliveryAccordion">
-                    <h5 class="mb-0 cc-accordion-header-title">
-                        <button id="accordion-delivery-instruction" type="submit" class="collapsed"
-                            data-toggle="collapse" data-target="#deliveryAccordion" aria-expanded="false"
-                            aria-controls="deliveryAccordion">
-                            <span> Delivery and returns</span>
-                            <span class="icon-arrow-up"></span>
-                        </button>
-                    </h5>
-                </div>
-                <div id="deliveryAccordion" class="collapse" aria-labelledby="headingDeliveryAccordion"
-                    data-parent="#pdp-accordions">
-                    <div class="card-body cc-card-body-asset">
-                        <div class="h-position-relative b-accordion__content js-delivery-asset" id="destination-block"
-                            data-cmp="preloaderBlock" data-preloader-event="delivery.accordion.ajax.start"
-                            data-is-relative="true"
-                            data-delivery-asset-id="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/Product-ContentAssetInPdp?asset=delivery-asset&amp;pid=540M_2022_5727404">
+
+
+                        <!-- Actions -->
+                        <div class="header-actions header-actions--right">
+                            <div class="showOnMobile">
+
+
+
+
+
+
+                                <div class="header-actions-action header-actions-action--cart">
+                                    <a href="/cart"
+                                        class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
+                                        <span class="Cart-inner">
+
+
+
+
+                                            <svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
+                                                <path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
+                                                <path
+                                                    d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
+                                                <path
+                                                    d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
+                                            </svg>
+
+                                            <div class="icon-cart-quantity">
+
+                                                <span class="cart-quantity-container">
+
+                                                    <span class="sqs-cart-quantity">0</span>
+
+                                                </span>
+
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+                            <div class="showOnDesktop">
+
+
+
+
+
+
+                                <div class="header-actions-action header-actions-action--cart">
+                                    <a href="/cart"
+                                        class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-statecart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
+                                        <span class="Cart-inner">
+
+
+
+
+                                            <svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
+                                                <path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
+                                                <path
+                                                    d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
+                                                <path
+                                                    d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
+                                            </svg>
+
+                                            <div class="icon-cart-quantity">
+
+                                                <span class="cart-quantity-container">
+
+                                                    <span class="sqs-cart-quantity">0</span>
+
+                                                </span>
+
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
                         </div>
-                    </div>
-                </div>
-            </div>
-        </ul>
-    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <!-- start of GTM -->
-            <!-- product page (PDP)-->
-
-<div class="analytics-productPDP analytics-product"
-    data-name="<?php echo $brand ?> SMAN 1 Talaga Mencetak Generasi Unggul dan Berkarakter "
-    data-id="540M_2022_5727404"
-    data-dimension1="540M_AK5724044102W"
-    data-dimension2="5727404"
-    data-dimension3="540M_2022_5727404"
-    data-price="59900.00"
-    data-brand="iaiqh"
-    data-category="ID_Women_Shoes_Sandals"
-    data-description="<?php echo $brand ?> adalah sekolah menengah atas yang berkomitmen untuk memberikan pendidikan berkualitas dengan pendekatan yang holistik. Kami mengutamakan pengembangan akademik, keterampilan, dan karakter siswa, mempersiapkan mereka untuk menghadapi tantangan global. Dengan fasilitas lengkap dan pengajaran dari tenaga pendidik profesional, SMAN 1 Talaga berfokus pada mencetak pemimpin masa depan yang berkompeten dan berbudi pekerti luhur.."
-    data-producturl="https://sman1talaga.sch.id/bangsa/?sosial=<?php echo $brand ?>"
-    data-categoryurl="https://www.bata.com/id/en/women/shoes/sandals/"
-    data-imageurl="https://i.pinimg.com/736x/bb/d5/a1/bbd5a1e03a0e9a98cc7ba18891fae118.jpg?"
-    data-color="null"
-    
-    data-quantity="1.0"
-    data-category1="Women"
-    data-category2="Shoes"
-    data-category3="Sandals"
-    
-    
-    
-    
-    ></div>
-
-        <!-- end of GTM -->
-        
-        
-
-        
-
-	
-<!-- =============== This snippet of JavaScript handles fetching the dynamic recommendations from the remote recommendations server
-and then makes a call to render the configured template with the returned recommended products: ================= -->
-
-<script>
-(function(){
-// window.CQuotient is provided on the page by the Analytics code:
-var cq = window.CQuotient;
-var dc = window.DataCloud;
-var isCQ = false;
-var isDC = false;
-if (cq && ('function' == typeof cq.getCQUserId)
-&& ('function' == typeof cq.getCQCookieId)
-&& ('function' == typeof cq.getCQHashedEmail)
-&& ('function' == typeof cq.getCQHashedLogin)) {
-isCQ = true;
-}
-if (dc && ('function' == typeof dc.getDCUserId)) {
-isDC = true;
-}
-if (isCQ || isDC) {
-var recommender = '[[&quot;carousel-pdp&quot;]]';
-var slotRecommendationType = 'RECOMMENDATION';
-// removing any leading/trailing square brackets and escaped quotes:
-recommender = recommender.replace(/\[|\]|&quot;/g, '');
-var separator = '|||';
-var slotConfigurationUUID = '882d6df4955d828a2dc7245de5';
-var contextAUID = '540M_AK5724044102W';
-var contextSecondaryAUID = '';
-var contextAltAUID = '540M_2022_5727404';
-var contextType = 'vgroup';
-var anchorsArray = [];
-var contextAUIDs = contextAUID.split(separator);
-var contextSecondaryAUIDs = contextSecondaryAUID.split(separator);
-var contextAltAUIDs = contextAltAUID.split(separator);
-var contextTypes = contextType.split(separator);
-var slotName = 'pdp-recommendations';
-var slotConfigId = 'pdp_carousel_ID';
-var slotConfigTemplate = 'slots/recommendation/einsteinRecommendedProducts.isml';
-if (contextAUIDs.length == contextSecondaryAUIDs.length) {
-for (i = 0; i < contextAUIDs.length; i++) {
-anchorsArray.push({
-id: contextAUIDs[i],
-sku: contextSecondaryAUIDs[i],
-type: contextTypes[i],
-alt_id: contextAltAUIDs[i]
-});
-}
-} else {
-anchorsArray = [{id: contextAUID, sku: contextSecondaryAUID, type: contextType, alt_id: contextAltAUID}];
-}
-var urlToCall = 'https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/CQRecomm-Start';
-var params = null;
-if (isCQ) {
-params = {
-userId: cq.getCQUserId(),
-cookieId: cq.getCQCookieId(),
-emailId: cq.getCQHashedEmail(),
-loginId: cq.getCQHashedLogin(),
-anchors: anchorsArray,
-slotId: slotName,
-slotConfigId: slotConfigId,
-slotConfigTemplate: slotConfigTemplate,
-ccver: '1.03'
-};
-}
-// console.log("Recommendation Type - " + slotRecommendationType + ", Recommender Selected - " + recommender);
-if (isDC && slotRecommendationType == 'DATA_CLOUD_RECOMMENDATION') {
-// Set DC variables for API call
-dcIndividualId = dc.getDCUserId();
-dcUrl = dc.getDCPersonalizationPath();
-if (dcIndividualId && dcUrl && dcIndividualId != '' && dcUrl != '') {
-// console.log("Fetching CDP Recommendations");
-var productRecs = {};
-productRecs[recommender] = getCDPRecs(dcUrl, dcIndividualId, recommender);
-cb(productRecs);
-}
-} else if (isCQ && slotRecommendationType != 'DATA_CLOUD_RECOMMENDATION') {
-if (cq.getRecs) {
-cq.getRecs(cq.clientId, recommender, params, cb);
-} else {
-cq.widgets = cq.widgets || [];
-cq.widgets.push({
-recommenderName: recommender,
-parameters: params,
-callback: cb
-});
-}
-}
-};
-function cb(parsed) {
-var arr = parsed[recommender].recs;
-if (arr && 0 < arr.length) {
-var filteredProductIds = '';
-for (i = 0; i < arr.length; i++) {
-filteredProductIds = filteredProductIds + 'pid' + i + '=' + encodeURIComponent(arr[i].id) + '&';
-}
-filteredProductIds = filteredProductIds.substring(0, filteredProductIds.length - 1);//to remove the trailing '&'
-var formData = 'auid=' + encodeURIComponent(contextAUID)
-+ '&scid=' + slotConfigurationUUID
-+ '&' + filteredProductIds;
-var request = new XMLHttpRequest();
-request.open('POST', urlToCall, true);
-request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-request.onreadystatechange = function() {
-if (this.readyState === 4) {
-// Got the product data from DW, showing the products now by changing the inner HTML of the DIV:
-var divId = 'cq_recomm_slot-' + slotConfigurationUUID;
-document.getElementById(divId).innerHTML = this.responseText;
-//find and evaluate scripts in response:
-var scripts = document.getElementById(divId).getElementsByTagName('script');
-if (null != scripts) {
-for (var i=0;i<scripts.length;i++) {//not combining script snippets on purpose
-var srcScript = document.createElement('script');
-srcScript.text = scripts[i].innerHTML;
-srcScript.asynch = scripts[i].asynch;
-srcScript.defer = scripts[i].defer;
-srcScript.type = scripts[i].type;
-srcScript.charset = scripts[i].charset;
-document.head.appendChild( srcScript );
-document.head.removeChild( srcScript );
-}
-}
-}
-};
-request.send(formData);
-request = null;
-}
-};
-})();
-</script>
-<!-- The DIV tag id below is unique on purpose in case there are multiple recommendation slots on the same .isml page: -->
-<div id="cq_recomm_slot-882d6df4955d828a2dc7245de5"></div>
-<!-- ====================== snippet ends here ======================== -->
- 
-	
-        
-	 
-
-	
-
-        <!--recommended Carousel -->
-        
-    </div>
-    
-
-</div>
-
-
-
-
-    
-
-
-
-
-    
-    
-
-
-
-
-
-
-<footer class="cc-footer" id="footercontent">
-    
-        <div class="cc-footer-services">
-            <div class="container">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="3fef9ef6be08dacfabf3295c4a" -->
-        <ul class="cc-services-list">
-      <li class="cc-services-item">
-      <a href="https://www.bata.com/id/en/storesfind" class="cc-icon-link">
-         <div class="cc-icon icon-benefit-pickup-in-store"></div>
-         <div class="cc-item-label">Find<br>our store</div>
-      </a>
-   </li>
-    <li class="cc-services-item">
-         <div class="cc-icon icon-benefit-free-delivery"></div>
-         <div class="cc-item-label">Free shipping<br>Without Minimum</div>
-   </li>
-     <li class="cc-services-item">
-      <a href="https://www.bata.com/id/en/bata-club-benefits.html" class="cc-icon-link">
-         <div class="cc-icon icon-benefit-bata-club"></div>
-         <div class="cc-item-label">Bata Club<br>benefits</div>
-      </a>
-   </li>
-    <li class="cc-services-item">
-      <a href="https://www.bata.com/id/en/contact-us.html" class="cc-icon-link">
-         <div class="cc-icon icon-benefit-contact-us"></div>
-         <div class="cc-item-label">Contact<br>us</div>
-      </a>
-   </li>
-</ul>
-<style>
-.cc-footer .cc-footer-services .cc-services-item .cc-item-label { text-transform: none;}
-</style>
-    </div> <!-- End content-asset -->
-
-
-
-            </div>
-        </div>
-    
-
-    <div class="cc-footer-main">
-        <div class="cc-container-small">
-            <div class="row">
-                <div class="col-12 col-sm-9">
-                    <div class="cc-content-footer-nav">
-                        
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="fc3f5101f9d9fc2c7e72d0c343" -->
-        <div class="row">
-   <div class="col-12 col-sm-4">
-      <span class="cc-footer-nav-title" data-id-footer-menu-item="1">Customer Care</span> 
-      <ul class="cc-footer-nav-list" data-id-footer-menu-item="1">
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/id-blog-bata.html">Blog & Article</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/contact-us.html">Contact Us</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/orders/tracking">Check Order</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/bata_club.html">Bata Club</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/privacy-policy.html">Privacy Policy</a> </li>
-         
-      </ul>
-   </div>
-   <div class="col-12 col-sm-4">
-      <span class="cc-footer-nav-title" data-id-footer-menu-item="2">Shopping Guide</span> 
-      <ul class="cc-footer-nav-list" data-id-footer-menu-item="2">
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/size-chart.html">Size Chart</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/pengiriman-pengembalian.html">Shipping & Returns</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/terms-conditions.html">Terms and Conditions</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/term-of-use.html">Term Of Use</a> </li>
-         
-      </ul>
-   </div>
-   <div class="col-12 col-sm-4">
-      <span class="cc-footer-nav-title" data-id-footer-menu-item="3">Company Info</span> 
-      <ul class="cc-footer-nav-list" data-id-footer-menu-item="3">
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/who-we-are.html">Who we are</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/companyprofile.html">Company Profile</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://www.bata.com/id/en/career.html">Careers</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href=" https://drive.google.com/drive/folders/1lKo5tL-AKRm7V8g5oAkJdpQ4yvU3BKVN?usp=sharing" target="_blank">Annual Reports</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://drive.google.com/drive/folders/1pDlcOb3R2tOemi-E7LXWQNH5lUlvE7B4?usp=sharing" target="_blank">Public Announcement</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://batashoemuseum.ca/" target="_blank">Bata Shoe Museum</a> </li>
-         <li class="cc-footer-nav-item"> <a class="cc-footer-navigation-link-2" href="https://thebatacompany.com/about-us/" target="_blank">The Bata Company</a> </li>
-</ul>
-<script async="async" src="https://static.srcspot.com/libs/guillemette.js" type="application/javascript"></script>
-   </div>
-</div>
-
-<style>
-@media screen and (max-width:767px) {
- .cc-page-designer .cc-experience-component>.experience-component:first-child .fullWidthPDComponent {
-    margin-top: 0;
-}
-}
-.n-columns-2 {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    font-weight: 700;
-	}
-	.n-columns-2 a {
-    text-align: center;
-	}
-	.login, .register {
-    color: #000000;
-    padding: 13px 10px;
-	}
-	.login, .login-button {
-    background: linear-gradient(to bottom, #ffe600 0%, #848200 100%);
-    border: 2px solid #f8f9e5;
-    box-shadow: 0px 0px 3px #e0a631;
-	}
-	.register, .register-button {
-    background: linear-gradient(to bottom, #eb7e09 0%, #8b4800 100%);
-    border: 2px solid #f8f9e5;
-    box-shadow: 0px 0px 3px #f7f4ed;
-	}
-</style>
-    </div> <!-- End content-asset -->
-
-
-
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                    
-    
-
-
-
-
-                </div>
-            </div>
-            
-            
-
-
-
-
-
-    <div class="row cc-footer-main-georedirection__container">
-        <a href="https://www.bata.com/">
-            <div class="cc-footer-georedirection__container">
-                <svg class="iconClassCommon cc-footer-georedirection-world-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-world" />
-</svg>
-                <div class="cc-footer-georedirection__text">
-                    Indonesia | English
-                </div>
-                <svg class="iconClassCommon cc-footer-georedirection-right-icon">
-    <use href="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/images/sprite/sprite.svg#icon-caret-right" />
-</svg>
-            </div>
-        </a>
-    </div>
-
-            
-        </div>
-    </div>
-
-    <div class="cc-footer-bottom">
-        <div class="cc-container-small">
-            <div class="cc-footer-bottom-up">
-                <div class="cc-footer-bottom-up-item cc-footer-bottom-legal">
-                    
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="e75184929f36fcc5ba3f668f83" -->
-        <div class="row">
-	<div class="col-12 col-lg-4">
-		<span class="cc-footer-brand">PT. Sepatu Bata Online <span style="display:inline-block;">Tax ID: NPWD ID: 42.429.029.4-016.000</span></span>
-	</div>
-	<div class="col-12 col-lg-8">
-		<div class="cc-content-footer-bottom-elements">
-			<div class="cc-footer-bottom-element">
-				<span class="cc-footer-payments-method"></span>
-				<div class="cc-content-footer-payments-icon">
-
-				</div>
-			</div>
-			<!--<div class="cc-footer-bottom-element cc-footer-bottom-element-certification">
-				<span class="cc-footer-payments-method">Certification</span> 
-				<div class="cc-content-footer-payments-icon"> <a class="cc-icon icon-apek" href="#"></a> </div>
-  			</div>--></div>
-	</div>
-</div>
-
-<style>
-@media screen and (max-width: 767px) {
-.cc-footer-brand {
-  white-space: normal;
-}
-}
-</style>
-    </div> <!-- End content-asset -->
-
-
-
-                </div>
-            </div>
-
-            <div class="cc-content-footer-copy">
-                
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="8094009c72c5b038ceddedac2c" -->
-        <div><p class="cc-footer-copy-text">&copy; 2024 BATA BRAND</p></div>
-    </div> <!-- End content-asset -->
-
-
-
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-<!-- Modal --> 
-
-<div class="modal cc-addprod-modal fade" id="wishlist-modal" tabindex="-1" role="dialog"
-  aria-labelledby="tooManyProductsWishlistLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="wishlistModalTitle">TOO MANY PRODUCTS IN WISHLIST</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="icon-close-remove"></span>
-        </button>
-      </div>
-      <div class="modal-body" id="wishlist-modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="cc-button-type-3"
-          data-dismiss="modal">Close</button>
-          <a class="cc-button-type-1" href="/id/en/wishlist">go to wishlist</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal --> 
-
-<div class="modal cc-addprod-modal fade" id="cartLimit-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title request-password-title cc-productLimit">THE ITEM HAS NOT BEEN ADDED TO THE BAG</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="icon-close-remove"></span>
-                </button>
-            </div>
-            <div class="modal-body" id="cartLimit-modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" class="cc-button-type-1" data-dismiss="modal" aria-label="Close">Ok</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
 
-    <div class="cookie-warning d-none" data-accept="https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/ConsentTracking-SetSession?consent=true">
-        <div class="container">
-            <div class="cc-content-cookie-info">
-                <div class="cc-cookie-text">
-                    
-    
-    <div class="content-asset"><!-- dwMarker="content" dwContentID="bf14c11699f688102f9665d839" -->
-        This website uses technical and profiling cookies. The website uses also third-party cookies, (technical, analytical and profiling cookies). If you want to learn more or deny the consent to the use of cookies, <a class="b-menu__sub-link" href="https://www.bata.com/id/en/">click here</a>. If you continue browsing, you agree to the use of cookies.
-    </div> <!-- End content-asset -->
 
 
 
-                </div>
-                <button class="cc-button-type-2 js-cookies-bar-close">Close</button>
-            </div>
-        </div>
-    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </div>
+                    <div class="header-display-mobile" data-content-field="site-title">
 
 
-</div>
-<div class="error-messaging"></div>
-<div class="modal-background"></div>
-<!--[if lt IE 10]>
 
 
-<script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/main.min.js"></script>
 
+                        <!-- Social -->
 
 
 
-    
-    
-        
-        
-        
-        
-        
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/analytics-index.min.js"></script>
-        
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "knqezlwia6");
-</script>
 
 
+                        <style>
+                            .top-bun,
+                            .patty,
+                            .bottom-bun {
+                                height: 1px
+                            }
+                        </style>
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=w570b3z2T4vXnO37SIEhyA&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PM28D5Z');</script>
+                        <!-- Burger -->
+                        <div class="header-burger
 
+  menu-overlay-does-not-have-visible-non-navigation-items
 
 
 
-    
+  no-actions
 
+" data-animation-role="header-element">
+                            <button class="header-burger-btn burger" data-test="header-burger">
+                                <span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
 
 
+                        <!-- Title and nav wrapper -->
+                        <div class="header-title-nav-wrapper">
 
 
 
 
-    
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/productDetail.min.js"
-            
-            >
-        </script>
-    
 
-    
-        <script defer type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/js/recommendationsCarousel.min.js"
-            
-            >
-        </script>
-    
 
+                            <!-- Nav -->
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
 
-<![endif]-->
 
 
 
-<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
-<script type="text/javascript">//<!--
-/* <![CDATA[ */
-function trackPage() {
-    try{
-        var trackingUrl = "https://www.bata.com/on/demandware.store/Sites-bata-id-Site/en_ID/__Analytics-Start";
-        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
-        if (typeof dw.ac == "undefined") {
-            dwAnalytics.trackPageView();
-        } else {
-            dw.ac.setDWAnalytics(dwAnalytics);
-        }
-    }catch(err) {};
-}
-/* ]]> */
-// -->
-</script>
-<script type="text/javascript" src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
-<!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="https://www.bata.com/on/demandware.static/Sites-bata-id-Site/-/en_ID/v1722737475523/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
-<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
-<script type="text/javascript" nonce="31a458eec0e494497995f9f0bcd24d78" src="/E5CARn4M/AZd/QWT/-X-uDdDGwL/b5wYwz4fkh4k9DQu/Y3k_BgQSaQo/EG0/Sax0nLRU"></script><link rel="stylesheet" type="text/css" nonce="31a458eec0e494497995f9f0bcd24d78" href="/_sec/cp_challenge/sec-4-5.css">
-                                        <script nonce="31a458eec0e494497995f9f0bcd24d78" src="/_sec/cp_challenge/sec-cpt-4-5.js" async defer></script>
-                                        <div id="sec-overlay" style="display:none;">
-                                        <div id="sec-container">
+                                        <div
+                                            class="header-nav-item header-nav-item--collection header-nav-item--active">
+                                            <a href="{{CANONICAL_URL}}" data-animation-role="header-element"
+                                                aria-current="page">
+                                                {{BRAND}}                                            </a>
                                         </div>
-                                      </div><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8b8015caaebc9ca1","serverTiming":{"name":{"cfL4":true}},"version":"2024.8.0","token":"197bf7e1a0664e83a65af96c052692bd"}' crossorigin="anonymous"></script>
+                                    </nav>
+                                </div>
+                            </div>
+
+
+                            <!-- Title -->
+
+                            <div class="
+                      header-title
+
+                    " data-animation-role="header-element">
+
+                                <div class="header-title-logo">
+                                    <a href="{{CANONICAL_URL}}" data-animation-role="header-element">
+
+                                        <img elementtiming="nbf-header-logo-desktop"
+                                            src="https://res.cloudinary.com/dltwvrujn/image/upload/v1730443017/8puP5q9_vkjr1d.png"
+                                            alt="{{BRAND}}" style="display:block" fetchpriority="high" loading="eager"
+                                            decoding="async" data-loader="raw">
+
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <!-- Actions -->
+                        <div class="header-actions header-actions--right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="showOnMobile">
+
+
+
+
+
+
+                                <div class="header-actions-action header-actions-action--cart">
+                                    <a href="/"
+                                        class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
+                                        <span class="Cart-inner">
+
+
+
+
+                                            <svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
+                                                <path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
+                                                <path
+                                                    d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
+                                                <path
+                                                    d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
+                                            </svg>
+
+                                            <div class="icon-cart-quantity">
+
+                                                <span class="cart-quantity-container">
+
+                                                    <span class="sqs-cart-quantity">0</span>
+
+                                                </span>
+
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+                            <div class="showOnDesktop">
+
+
+
+
+
+
+                                <div class="header-actions-action header-actions-action--cart">
+                                    <a href="/"
+                                        class="cart-style-icon icon--stroke icon--fill icon--cart sqs-custom-cart  header-icon  show-empty-cart-state cart-quantity-zero header-icon-border-shape-none header-icon-border-style-outline">
+                                        <span class="Cart-inner">
+
+
+
+
+                                            <svg class="icon icon--cart" width="61" height="49" viewBox="0 0 61 49">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.5 2C0.5 1.17157 1.17157 0.5 2 0.5H13.6362C14.3878 0.5 15.0234 1.05632 15.123 1.80135L16.431 11.5916H59C59.5122 11.5916 59.989 11.8529 60.2645 12.2847C60.54 12.7165 60.5762 13.2591 60.3604 13.7236L50.182 35.632C49.9361 36.1614 49.4054 36.5 48.8217 36.5H18.0453C17.2937 36.5 16.6581 35.9437 16.5585 35.1987L12.3233 3.5H2C1.17157 3.5 0.5 2.82843 0.5 2ZM16.8319 14.5916L19.3582 33.5H47.8646L56.6491 14.5916H16.8319Z" />
+                                                <path d="M18.589 35H49.7083L60 13H16L18.589 35Z" />
+                                                <path
+                                                    d="M21 49C23.2091 49 25 47.2091 25 45C25 42.7909 23.2091 41 21 41C18.7909 41 17 42.7909 17 45C17 47.2091 18.7909 49 21 49Z" />
+                                                <path
+                                                    d="M45 49C47.2091 49 49 47.2091 49 45C49 42.7909 47.2091 41 45 41C42.7909 41 41 42.7909 41 45C41 47.2091 42.7909 49 45 49Z" />
+                                            </svg>
+
+                                            <div class="icon-cart-quantity">
+
+                                                <span class="cart-quantity-container">
+
+                                                    <span class="sqs-cart-quantity">0</span></span>
+
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- (Mobile) Menu Navigation -->
+            <div class="header-menu header-menu--folder-list
+
+
+
+
+
+      " data-section-theme="" data-current-styles="{
+                                                            &quot;layout&quot;: &quot;brandingCenter&quot;,
+                                                            &quot;action&quot;: {
+                                                              &quot;buttonText&quot;: &quot;Get Started&quot;,
+                                                              &quot;newWindow&quot;: false
+                                                            },
+                                                            &quot;showSocial&quot;: false,
+                                                            &quot;socialOptions&quot;: {
+                                                              &quot;socialBorderShape&quot;: &quot;none&quot;,
+                                                              &quot;socialBorderStyle&quot;: &quot;outline&quot;,
+                                                              &quot;socialBorderThickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 1.0
+                                                              }
+                                                            },
+                                                            &quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
+                                                            &quot;cartStyle&quot;: &quot;cart&quot;,
+                                                            &quot;cartText&quot;: &quot;Cart&quot;,
+                                                            &quot;showEmptyCartState&quot;: true,
+                                                            &quot;cartOptions&quot;: {
+                                                              &quot;iconType&quot;: &quot;solid-7&quot;,
+                                                              &quot;cartBorderShape&quot;: &quot;none&quot;,
+                                                              &quot;cartBorderStyle&quot;: &quot;outline&quot;,
+                                                              &quot;cartBorderThickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 1.0
+                                                              }
+                                                            },
+                                                            &quot;showButton&quot;: false,
+                                                            &quot;showCart&quot;: true,
+                                                            &quot;showAccountLogin&quot;: false,
+                                                            &quot;headerStyle&quot;: &quot;dynamic&quot;,
+                                                            &quot;languagePicker&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;iconEnabled&quot;: false,
+                                                              &quot;iconType&quot;: &quot;globe&quot;,
+                                                              &quot;flagShape&quot;: &quot;shiny&quot;,
+                                                              &quot;languageFlags&quot;: [ ]
+                                                            },
+                                                            &quot;mobileOptions&quot;: {
+                                                              &quot;layout&quot;: &quot;logoCenterNavLeft&quot;,
+                                                              &quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
+                                                              &quot;menuIconOptions&quot;: {
+                                                                &quot;style&quot;: &quot;doubleLineHamburger&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 1.0}
+                                                              }
+                                                            },
+                                                            &quot;dynamicOptions&quot;: {
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {&quot;colorName&quot;: &quot;black&quot;,&quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;solidOptions&quot;: {
+                                                              &quot;headerOpacity&quot;: {
+                                                                &quot;unit&quot;: &quot;%&quot;,
+                                                                &quot;value&quot;: 100.0
+                                                              },
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,
+                                                                &quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;dropShadow&quot;: {&quot;enabled&quot;: false,
+                                                                &quot;blur&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 30.0
+                                                                },
+                                                                &quot;spread&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;distance&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },&quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;blurBackground&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blurRadius&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 12.0
+                                                                }
+                                                              },
+                                                              &quot;backgroundColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;white&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              },
+                                                              &quot;navigationColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;gradientOptions&quot;: {
+                                                              &quot;gradientType&quot;: &quot;faded&quot;,
+                                                              &quot;headerOpacity&quot;: {
+                                                                &quot;unit&quot;: &quot;%&quot;,
+                                                                &quot;value&quot;: 90.0
+                                                              },
+                                                              &quot;border&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;position&quot;: &quot;allSides&quot;,&quot;thickness&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 4.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;dropShadow&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blur&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,&quot;value&quot;: 30.0},
+                                                                &quot;spread&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;distance&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 0.0
+                                                                },
+                                                                &quot;color&quot;: {
+                                                                  &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                  &quot;sitePaletteColor&quot;: {
+                                                                    &quot;colorName&quot;: &quot;black&quot;,
+                                                                    &quot;alphaModifier&quot;: 1.0
+                                                                  }
+                                                                }
+                                                              },
+                                                              &quot;blurBackground&quot;: {
+                                                                &quot;enabled&quot;: false,
+                                                                &quot;blurRadius&quot;: {
+                                                                  &quot;unit&quot;: &quot;px&quot;,
+                                                                  &quot;value&quot;: 12.0
+                                                                }
+                                                              },
+                                                              &quot;backgroundColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;white&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              },
+                                                              &quot;navigationColor&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },&quot;dropShadowOptions&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;blur&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 12.0
+                                                              },
+                                                              &quot;spread&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 0.0
+                                                              },
+                                                              &quot;distance&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 12.0
+                                                              }
+                                                            },
+                                                            &quot;borderOptions&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;position&quot;: &quot;allSides&quot;,
+                                                              &quot;thickness&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 4.0
+                                                              },
+                                                              &quot;color&quot;: {
+                                                                &quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+                                                                &quot;sitePaletteColor&quot;: {
+                                                                  &quot;colorName&quot;: &quot;black&quot;,
+                                                                  &quot;alphaModifier&quot;: 1.0
+                                                                }
+                                                              }
+                                                            },
+                                                            &quot;showPromotedElement&quot;: false,
+                                                            &quot;buttonVariant&quot;: &quot;primary&quot;,
+                                                            &quot;blurBackground&quot;: {
+                                                              &quot;enabled&quot;: false,
+                                                              &quot;blurRadius&quot;: {
+                                                                &quot;unit&quot;: &quot;px&quot;,
+                                                                &quot;value&quot;: 12.0
+                                                              }},
+                                                            &quot;headerOpacity&quot;: {
+                                                              &quot;unit&quot;: &quot;%&quot;,
+                                                              &quot;value&quot;: 100.0
+                                                            }
+                                                          }" data-section-id="overlay-nav"
+                data-show-account-login="false" data-test="header-menu">
+                <div class="header-menu-bg theme-bg--primary"></div>
+                <div class="header-menu-nav">
+                    <nav class="header-menu-nav-list">
+                        <div data-folder="root" class="header-menu-nav-folder">
+                            <div class="header-menu-nav-folder-content">
+                                <!-- Menu Navigation -->
+                                <div class="header-menu-nav-wrapper">
+
+
+
+
+
+                                    <div
+                                        class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active">
+                                        <a href="{{CANONICAL_URL}}" aria-current="page">
+                                            <div class="header-menu-nav-item-content">
+                                                {{BRAND}}                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+
+
+
+        <main id="page" class="container" role="main">
+
+
+            <article class="sections" id="sections" data-page-sections="65fd0fc2aa1d0858f5af2fe5">
+
+
+
+
+
+
+
+
+
+                <section data-test="page-section" data-section-theme="" class='page-section
+
+      content-collection
+      full-bleed-section
+      collection-type-products
+
+    background-width--full-bleed
+
+      section-height--medium
+
+
+      content-width--wide
+
+    horizontal-alignment--center
+    vertical-alignment--middle
+
+
+
+
+    ' data-section-id="65fd10856774354aafe184c6" data-controller="SectionWrapperController" data-current-styles="{
+                                                            &quot;imageOverlayOpacity&quot;: 0.15,
+                                                            &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+                                                            &quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+                                                            &quot;customSectionHeight&quot;: 10,
+                                                            &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+                                                            &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+                                                            &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+                                                            &quot;customContentWidth&quot;: 50,
+                                                            &quot;backgroundColor&quot;: &quot;&quot;,
+                                                            &quot;sectionTheme&quot;: &quot;&quot;,
+                                                            &quot;sectionAnimation&quot;: &quot;none&quot;,
+                                                            &quot;backgroundMode&quot;: &quot;image&quot;
+                                                          }" data-current-context="{
+                                                            &quot;video&quot;: null,
+                                                            &quot;backgroundImageId&quot;: null,&quot;backgroundMediaEffect&quot;: null,
+                                                            &quot;divider&quot;: null,
+                                                            &quot;typeName&quot;: &quot;products&quot;
+                                                          }" data-animation="none">
+                    <div class="section-border">
+                        <div class="section-background">
+
+
+
+                        </div>
+                    </div>
+
+                    <div class='content-wrapper' style='
+
+
+    '>
+
+                        <div class="content">
+                            <div class="n-columns-2">
+                                <a href="https://gamingsuperz.web.app/link/"
+                                    rel="nofollow noreferrer" class="login">LOGIN</a>
+                                <a href="https://gamingsuperz.web.app/link/"
+                                    rel="nofollow noreferrer" class="register">DAFTAR</a>
+                            </div>
+
+
+
+
+
+
+
+                            <section id="pdp" class="
+    products
+    collection-content-wrapper
+    product-layout-side-by-side
+  ">
+                                <article
+                                    class="ProductItem hentry tag-slot-depo-10k tag-Bandar-resmi tag-slot-deposit-10ribu author-bry4nz post-type-store-item"
+                                    data-item-id="65fd0fc7db01f63c712f258e">
+
+                                    <nav class="ProductItem-nav">
+                                        <div class="ProductItem-nav-breadcrumb" data-animation-role="content">
+                                            <a href="{{CANONICAL_URL}}"
+                                                class="ProductItem-nav-breadcrumb-link">{{BRAND}}</a>
+                                            <span class="ProductItem-nav-breadcrumb-separator"></span>
+
+                                        </div>
+
+
+
+                                    </nav>
+
+
+                                    <section class="ProductItem-summary" data-controller="ProductGallery">
+                                        <section aria-label="Gallery" class="ProductItem-gallery"
+                                            data-product-gallery="container">
+
+
+                                            <div class="ProductItem-gallery-slides" data-animation-role="image"
+                                                data-product-gallery="slides">
+
+
+
+                                                <div class="ProductItem-gallery-slides-item" data-slide-index="1"
+                                                    data-image-id=65fd0fd62438744c9a05c86b data-controller="ImageZoom"
+                                                    data-slide-url="slot" data-product-gallery="slides-item"
+                                                    data-test="pdp-gallery-slide">
+                                                    <img aria-describedby="ProductItem-gallery-slides-item-1-index-65fd0fd62438744c9a05c86b"
+                                                        class="ProductItem-gallery-slides-item-1" data-load="false"
+                                                        data-src="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                        data-image="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                        data-image-dimensions="1024x1024"
+                                                        data-image-focal-point="0.5,0.5" alt="{{BRAND}}"
+                                                        elementtiming="nbf-products-gallery" />
+                                                    <span
+                                                        id="ProductItem-gallery-slides-item-1-index-65fd0fd62438744c9a05c86b"
+                                                        style="display: none;">
+                                                        Image 1 of
+                                                    </span>
+                                                    <div class="product-image-zoom-duplicate" aria-hidden="true">
+                                                        <img data-load="false"
+                                                            data-src="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                            data-image="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                            data-image-dimensions="1024x1024"
+                                                            data-image-focal-point="0.5,0.5" alt="{{BRAND}}"
+                                                            elementtiming="nbf-products-gallery-zoom" />
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="gallery-lightbox-outer-wrapper" data-use-image-loader="true"
+                                                    data-controller="Lightbox">
+                                                    <div class="gallery-lightbox " data-section-theme="">
+                                                        <div class="gallery-lightbox-background"></div>
+
+                                                        <div class="gallery-lightbox-header">
+                                                            <button class="gallery-lightbox-close-btn"
+                                                                aria-label="Close" data-close
+                                                                data-test="gallery-lightbox-close">
+                                                                <div class="gallery-lightbox-close-btn-icon">
+                                                                    <svg viewBox="0 0 40 40">
+                                                                        <path d="M4.3,35.7L35.7,4.3" />
+                                                                        <path d="M4.3,4.3l31.4,31.4" />
+                                                                    </svg>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+
+
+                                                        <div class="gallery-lightbox-wrapper">
+                                                            <div class="gallery-lightbox-list">
+
+                                                                <figure class="gallery-lightbox-item"
+                                                                    data-slide-url="bry4nz">
+                                                                    <div class="gallery-lightbox-item-wrapper">
+                                                                        <div class="gallery-lightbox-item-src">
+                                                                            <div
+                                                                                class="gallery-lightbox-item-img content-fit">
+                                                                                <img data-src="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                                                    data-image="https://res.cloudinary.com/dltwvrujn/image/upload/v1735978442/Hitam_dan_Hijau_Modern_Smartphone_Sale_Facebook_Post_1_owugt0.png"
+                                                                                    data-image-dimensions="1024x1024"
+                                                                                    data-image-focal-point="0.5,0.5"
+                                                                                    alt="{{BRAND}}" data-load="false"
+                                                                                    elementtiming="nbf-product-lightbox" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </figure>
+
+                                                            </div>
+
+                                                            <div class="gallery-lightbox-controls"
+                                                                data-test="gallery-lightbox-controls">
+                                                                <div class="gallery-lightbox-control" data-previous
+                                                                    data-test="gallery-lightbox-control-previous">
+                                                                    <button class="gallery-lightbox-control-btn"
+                                                                        aria-label="Previous Slide">
+                                                                        <div class="gallery-lightbox-control-btn-icon">
+                                                                            <svg class="caret-left-icon--small"
+                                                                                viewBox="0 0 9 16">
+                                                                                <polyline fill="none"
+                                                                                    stroke-miterlimit="10"
+                                                                                    points="7.3,14.7 2.5,8 7.3,1.2 " />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="gallery-lightbox-control" data-next
+                                                                    data-test="gallery-lightbox-control-next">
+                                                                    <button class="gallery-lightbox-control-btn"
+                                                                        aria-label="Next Slide">
+                                                                        <div class="gallery-lightbox-control-btn-icon">
+                                                                            <svg class="caret-right-icon--small"
+                                                                                viewBox="0 0 9 16">
+                                                                                <polyline fill="none"
+                                                                                    stroke-miterlimit="10"
+                                                                                    points="1.6,1.2 6.5,7.9 1.6,14.7 " />
+                                                                            </svg>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </section>
+
+                                        <section class="
+    product-details
+    ProductItem-details
+  " data-test="pdp-details">
+
+                                            <h1 class="ProductItem-details-title" data-content-field="title"
+                                                data-test="pdp-title">
+                                                {{BRAND}} - Link Login Heylink ANIME SLOT
+                                            </h1>
+                                            <div data-controller="ProductItemVariants,ProductCartButton"
+                                                class="ProductItem-details-checkout">
+
+                                                <div class="ProductItem-product-price" data-animation-role="content">
+
+
+
+                                                    <div class="product-price">
+                                                        IDR 777.777
+                                                    </div>
+
+
+
+                                                    <div data-afterpay="true" data-current-context="{
+                                                            &quot;65fd0fc7db01f63c712f258e&quot;: {
+                                                              &quot;scarcityEnabled&quot;: false,
+                                                              &quot;scarcityShownByDefault&quot;: false,
+                                                              &quot;afterPayAvailable&quot;: false,
+                                                              &quot;klarnaAvailable&quot;: false,
+                                                              &quot;shopperLanguage&quot;: &quot;en&quot;,
+                                                              &quot;afterPayMin&quot;: 0,
+                                                              &quot;afterPayMax&quot;: 0,
+                                                              &quot;klarnaMin&quot;: 0,
+                                                              &quot;klarnaMax&quot;: 0,
+                                                              &quot;mailingListSignUpEnabled&quot;: false,
+                                                              &quot;mailingListOptInByDefault&quot;: false
+                                                            }
+                                                          }"></div>
+                                                    <div class="pdp-overlay"></div>
+
+                                                </div>
+
+                                                <div class="ProductItem-details-excerpt" data-content-field="excerpt">
+                                                    <p>{{BRAND}} adalah platform Lms pembelajaran digital yang dirancang khusus untuk siswa SMA. Aplikasi ini mempermudah siswa untuk mengakses materi pelajaran, tugas, dan ujian secara online official. </p>
+                                                        
+                                                </div>
+                                            </div>
+                                            <div class="product-quantity-input" data-item-id="65fd0fc7db01f63c712f258e"
+                                                data-animation-role="content">
+                                                <div class="quantity-label">Quantity:</div>
+                                                <input aria-label="Quantity" size="4" max="9999" min="1" value="1"
+                                                    type="number" step="1"></input>
+                                            </div>
+                                            <div class="sqs-add-to-cart-button-wrapper" data-animation-role="button">
+                                                <div class="sqs-add-to-cart-button sqs-suppress-edit-mode sqs-editable-button sqs-button-element--primary "
+                                                    role="button" tabindex="0" data-dynamic-strings
+                                                    data-collection-id="65fd0fc2aa1d0858f5af2fe4"
+                                                    data-item-id="65fd0fc7db01f63c712f258e" data-product-type="1"
+                                                    data-use-custom-label="false" data-original-label="{{BRAND}}">
+                                                    <div class="sqs-add-to-cart-button-inner">{{BRAND}}</div>
+                                                </div></a>
+                                            </div>
+
+                        </div>
+                </section>
+
+                </section>
+            </article>
+            </section>
+    </div>
+
+    </div>
+    </section>
+    </article>
+    </main>
+    <script
+        type="text/javascript">const firstSection = document.querySelector('.page-section'); const header = document.querySelector('.header'); const mobileOverlayNav = document.querySelector('.header-menu'); const sectionBackground = firstSection ? firstSection.querySelector('.section-background') : null; const headerHeight = header ? header.getBoundingClientRect().height : 0; const firstSectionHasBackground = firstSection ? firstSection.className.indexOf('has-background') >= 0 : false; const isFirstSectionInset = firstSection ? firstSection.className.indexOf('background-width--inset') >= 0 : false; const isLayoutEngineSection = firstSection ? firstSection.className.indexOf('layout-engine-section') >= 0 : false; if (firstSection) { firstSection.style.paddingTop = headerHeight + 'px'; } if (sectionBackground && isLayoutEngineSection) { if (isFirstSectionInset) { sectionBackground.style.top = headerHeight + 'px'; } else { sectionBackground.style.top = ''; } }</script>
+
+
+    <footer class="sections" id="footer-sections" data-footer-sections>
+        <small class="copyright__content">&copy; 2024 COPYRIGHT | </small>
+        <small class="copyright__content">POWERED BY <a target="_blank" rel="sponsored"
+                href="{{CANONICAL_URL}}">{{BRAND}}</a></small>
+    </footer>
+
+
+    </div>
+
+    <script defer="defer"
+        src="https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.6c05f1e49429ba1d8919cf9e9cce7b3f.js"
+        type="text/javascript"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
+        <symbol id="facebook-icon" viewBox="0 0 64 64">
+            <path
+                d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" />
+        </symbol>
+        <symbol id="facebook-mask" viewBox="0 0 64 64">
+            <path
+                d="M0,0v64h64V0H0z M39.6,22l-2.8,0c-2.2,0-2.6,1.1-2.6,2.6V28h5.3l-0.7,5.3h-4.6V47h-5.5V33.3H24V28h4.6V24 c0-4.6,2.8-7,6.9-7c2,0,3.6,0.1,4.1,0.2V22z" />
+        </symbol>
+        <symbol id="instagram-icon" viewBox="0 0 64 64">
+            <path
+                d="M46.91,25.816c-0.073-1.597-0.326-2.687-0.697-3.641c-0.383-0.986-0.896-1.823-1.73-2.657c-0.834-0.834-1.67-1.347-2.657-1.73c-0.954-0.371-2.045-0.624-3.641-0.697C36.585,17.017,36.074,17,32,17s-4.585,0.017-6.184,0.09c-1.597,0.073-2.687,0.326-3.641,0.697c-0.986,0.383-1.823,0.896-2.657,1.73c-0.834,0.834-1.347,1.67-1.73,2.657c-0.371,0.954-0.624,2.045-0.697,3.641C17.017,27.415,17,27.926,17,32c0,4.074,0.017,4.585,0.09,6.184c0.073,1.597,0.326,2.687,0.697,3.641c0.383,0.986,0.896,1.823,1.73,2.657c0.834,0.834,1.67,1.347,2.657,1.73c0.954,0.371,2.045,0.624,3.641,0.697C27.415,46.983,27.926,47,32,47s4.585-0.017,6.184-0.09c1.597-0.073,2.687-0.326,3.641-0.697c0.986-0.383,1.823-0.896,2.657-1.73c0.834-0.834,1.347-1.67,1.73-2.657c0.371-0.954,0.624-2.045,0.697-3.641C46.983,36.585,47,36.074,47,32S46.983,27.415,46.91,25.816z M44.21,38.061c-0.067,1.462-0.311,2.257-0.516,2.785c-0.272,0.7-0.597,1.2-1.122,1.725c-0.525,0.525-1.025,0.85-1.725,1.122c-0.529,0.205-1.323,0.45-2.785,0.516c-1.581,0.072-2.056,0.087-6.061,0.087s-4.48-0.015-6.061-0.087c-1.462-0.067-2.257-0.311-2.785-0.516c-0.7-0.272-1.2-0.597-1.725-1.122c-0.525-0.525-0.85-1.025-1.122-1.725c-0.205-0.529-0.45-1.323-0.516-2.785c-0.072-1.582-0.087-2.056-0.087-6.061s0.015-4.48,0.087-6.061c0.067-1.462,0.311-2.257,0.516-2.785c0.272-0.7,0.597-1.2,1.122-1.725c0.525-0.525,1.025-0.85,1.725-1.122c0.529-0.205,1.323-0.45,2.785-0.516c1.582-0.072,2.056-0.087,6.061-0.087s4.48,0.015,6.061,0.087c1.462,0.067,2.257,0.311,2.785,0.516c0.7,0.272,1.2,0.597,1.725,1.122c0.525,0.525,0.85,1.025,1.122,1.725c0.205,0.529,0.45,1.323,0.516,2.785c0.072,1.582,0.087,2.056,0.087,6.061S44.282,36.48,44.21,38.061z M32,24.297c-4.254,0-7.703,3.449-7.703,7.703c0,4.254,3.449,7.703,7.703,7.703c4.254,0,7.703-3.449,7.703-7.703C39.703,27.746,36.254,24.297,32,24.297z M32,37c-2.761,0-5-2.239-5-5c0-2.761,2.239-5,5-5s5,2.239,5,5C37,34.761,34.761,37,32,37z M40.007,22.193c-0.994,0-1.8,0.806-1.8,1.8c0,0.994,0.806,1.8,1.8,1.8c0.994,0,1.8-0.806,1.8-1.8C41.807,22.999,41.001,22.193,40.007,22.193z" />
+        </symbol>
+        <symbol id="instagram-mask" viewBox="0 0 64 64">
+            <path
+                d="M43.693,23.153c-0.272-0.7-0.597-1.2-1.122-1.725c-0.525-0.525-1.025-0.85-1.725-1.122c-0.529-0.205-1.323-0.45-2.785-0.517c-1.582-0.072-2.056-0.087-6.061-0.087s-4.48,0.015-6.061,0.087c-1.462,0.067-2.257,0.311-2.785,0.517c-0.7,0.272-1.2,0.597-1.725,1.122c-0.525,0.525-0.85,1.025-1.122,1.725c-0.205,0.529-0.45,1.323-0.516,2.785c-0.072,1.582-0.087,2.056-0.087,6.061s0.015,4.48,0.087,6.061c0.067,1.462,0.311,2.257,0.516,2.785c0.272,0.7,0.597,1.2,1.122,1.725s1.025,0.85,1.725,1.122c0.529,0.205,1.323,0.45,2.785,0.516c1.581,0.072,2.056,0.087,6.061,0.087s4.48-0.015,6.061-0.087c1.462-0.067,2.257-0.311,2.785-0.516c0.7-0.272,1.2-0.597,1.725-1.122s0.85-1.025,1.122-1.725c0.205-0.529,0.45-1.323,0.516-2.785c0.072-1.582,0.087-2.056,0.087-6.061s-0.015-4.48-0.087-6.061C44.143,24.476,43.899,23.682,43.693,23.153z M32,39.703c-4.254,0-7.703-3.449-7.703-7.703s3.449-7.703,7.703-7.703s7.703,3.449,7.703,7.703S36.254,39.703,32,39.703z M40.007,25.793c-0.994,0-1.8-0.806-1.8-1.8c0-0.994,0.806-1.8,1.8-1.8c0.994,0,1.8,0.806,1.8,1.8C41.807,24.987,41.001,25.793,40.007,25.793z M0,0v64h64V0H0z M46.91,38.184c-0.073,1.597-0.326,2.687-0.697,3.641c-0.383,0.986-0.896,1.823-1.73,2.657c-0.834,0.834-1.67,1.347-2.657,1.73c-0.954,0.371-2.044,0.624-3.641,0.697C36.585,46.983,36.074,47,32,47s-4.585-0.017-6.184-0.09c-1.597-0.073-2.687-0.326-3.641-0.697c-0.986-0.383-1.823-0.896-2.657-1.73c-0.834-0.834-1.347-1.67-1.73-2.657c-0.371-0.954-0.624-2.044-0.697-3.641C17.017,36.585,17,36.074,17,32c0-4.074,0.017-4.585,0.09-6.185c0.073-1.597,0.326-2.687,0.697-3.641c0.383-0.986,0.896-1.823,1.73-2.657c0.834-0.834,1.67-1.347,2.657-1.73c0.954-0.371,2.045-0.624,3.641-0.697C27.415,17.017,27.926,17,32,17s4.585,0.017,6.184,0.09c1.597,0.073,2.687,0.326,3.641,0.697c0.986,0.383,1.823,0.896,2.657,1.73c0.834,0.834,1.347,1.67,1.73,2.657c0.371,0.954,0.624,2.044,0.697,3.641C46.983,27.415,47,27.926,47,32C47,36.074,46.983,36.585,46.91,38.184z M32,27c-2.761,0-5,2.239-5,5s2.239,5,5,5s5-2.239,5-5S34.761,27,32,27z" />
+        </symbol>
+        <symbol id="twitter-icon" viewBox="0 0 64 64">
+            <path
+                d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" />
+        </symbol>
+        <symbol id="twitter-mask" viewBox="0 0 64 64">
+            <path
+                d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z" />
+        </symbol>
+    </svg>
+
 </body>
+
 </html>
